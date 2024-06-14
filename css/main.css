@@ -20,7 +20,7 @@ Couples Resort Responsive Build
 
 #mobile-outline {
   outline: 20px solid #333;
-  max-width: 412px;
+  max-width: 430px;
   margin: 20px auto 20px auto;
   border-radius: 10px;
 }
@@ -61,11 +61,16 @@ textarea {
 #main-nav button.expanded {
   transform: rotate(90deg);
 }
-
+/* change font weight */
 #burger-con {
   margin-top: 20px;
   margin-bottom: 20px;
   display: none;
+  font-weight: 900;
+}
+
+#burger-con li{
+  padding-right: 10px;
 }
 
 #burger-con.slide-toggle {
@@ -101,51 +106,20 @@ textarea {
   margin-bottom: 10px;
 }
 
+/* mobile logo size changed */
 #logo {
   margin-bottom: 20px;
-  max-width: 280px;
+  width: 100px;
+
 }
 
 #book-now-header {
   display: none;
 }
 
-.book-now {
-  background-color: #9a2018;
-  color: #fff;
-  font-size: 16px;
-  font-style: italic;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-}
-
-.book-now:hover {
-  box-shadow: inset 0px -120px 0px rgb(196, 28, 28);
-}
-
-/* 3. ---Main Hero Image--- */
-
 #hero {
   background: url(../images/hero-main.jpg) no-repeat;
   height: 200px;
-}
-
-.book-now {
-  background-color: #9a2018;
-  color: #fff;
-  font-size: 16px;
-  transition: background-color 500ms linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: italic;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.book-now:hover {
-  background-color: rgb(196, 28, 28);
 }
 
 #book-now-hero {
@@ -462,16 +436,17 @@ textarea {
     border-bottom: solid 1px #c3c3c3;
     z-index: 1;
   }
-
-  #main-nav {
-    margin-top: 4%;
-    margin-bottom: 4%;
-    border-left: 2px solid #707070;
-    padding-left: 30px;
+ 
+  #main-nav ul {
+    line-height: 68px;
   }
 
   #main-nav ul li a {
     display: inline;
+  }
+
+  #main-nav ul li {
+    padding-right: 10px;
   }
 
   #button {
@@ -498,14 +473,39 @@ textarea {
   }
 
   #logo {
-    margin-top: 32px;
+    margin-top: 5px;
+    margin-bottom: 0;
     order: -1;
+    max-width: 100px;
   }
 
   #book-now-header {
     display: flex;
     margin-right: -16px;
   }
+
+  .book-now {
+    background-color: #94DA00;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-height: 50px;
+    max-width: 117px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  .book-now button {
+    background: transparent;
+    border: none;
+    color:#333;
+    font-weight: 900;
+    font-size: 10px;
+  }
+  
 }
 
 /* ---Desktop Library Grid Styles--- */
@@ -520,6 +520,11 @@ textarea {
     margin-left: 25px;
   }
 
+  #main-nav ul {
+    line-height: 30px;
+  }
+
+
   #burger-con {
     font-size: 16px;
     margin-top: 28px;
@@ -532,4 +537,35 @@ textarea {
   .book-now {
     font-size: 18px;
   }
+
+  /* change the name of id and class later */
+.book-now {
+  background-color: #94DA00;
+  font-size: 16px;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 170px;
+  max-height: 50px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.book-now button {
+  background: transparent;
+  border: none;
+  color:#333;
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.book-now:hover {
+  /* We can change the color of background when its hoverd on */
+  background-color: #1dda00af;
+}
+
 }
