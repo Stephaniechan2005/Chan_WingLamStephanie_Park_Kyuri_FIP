@@ -63,7 +63,8 @@ h5 {
 
 .grid-con {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  /* add one more colums */
   column-gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -86,6 +87,11 @@ h5 {
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
 .col-span-full {
   grid-column: 1 / -1;
 }
@@ -102,6 +108,11 @@ h5 {
 .col-start-4 {
   grid-column-start: 4;
 }
+
+.col-start-5 {
+  grid-column-start: 5;
+}
+
 .col-start-auto {
   grid-column-start: auto;
 }
@@ -121,6 +132,11 @@ h5 {
 .col-end-5 {
   grid-column-end: 5;
 }
+
+.col-end-6 {
+  grid-column-end: 6;
+}
+
 .col-end-auto {
   grid-column-end: auto;
 }
