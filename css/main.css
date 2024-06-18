@@ -9,7 +9,7 @@ Couples Resort Responsive Build
     1.  General Styles
     2.  Main Nav
     3.  Main Hero Image
-    4.  Ingredients
+    4.  edients
     5.  Introducing Quatro Flavours
     6.  Featuring Product
     7.  Subscribe
@@ -26,6 +26,7 @@ Couples Resort Responsive Build
 }
 
 body {
+  background-color: #FFFBF3;
   color: #626262;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -69,6 +70,12 @@ textarea {
   font-weight: 900;
 }
 
+
+/* nav text align:center; */
+#burger-con ul {
+  text-align: right;
+}
+
 #burger-con li{
   padding-right: 10px;
 }
@@ -78,7 +85,7 @@ textarea {
 }
 
 #main-nav ul li a:hover {
-  color: #9a2018;
+  color: #94DA00;
 }
 
 #main-nav ul {
@@ -106,23 +113,28 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* mobile logo size changed */
+/* change the size of mobile ver of logo */
 #logo {
   margin-bottom: 20px;
   width: 100px;
 
 }
+/* 3. Hero => video */
+/* delete class="hidden" to see size of the box */
+#video-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 100px;
+  padding: 100px;
+  background-color:#D9D9D9;
+}
 
-#book-now-header {
+#sign-header {
   display: none;
 }
 
-#hero {
-  background: url(../images/hero-main.jpg) no-repeat;
-  height: 200px;
-}
 
-#book-now-hero {
+#sign-hero {
   height: 67px;
 }
 
@@ -130,209 +142,141 @@ textarea {
   align-self: end;
 }
 
-.hero-img-h2,
-.hero-img-h3 {
-  background: rgb(255, 255, 255);
-  padding: 10px 15px;
-  font-size: 14px;
+#introduction-con {
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.hero-img-h2 span,
-.hero-img-h3 span {
-  color: #9a2018;
-  font-size: 12px;
+.introducing_h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 45px;
 }
 
-.line-separator {
-  margin-top: 20px;
-  border-top: solid 3px #cf6666;
-  padding-top: 20px;
+#featuring-con {
+  margin: 100px 0;
 }
 
-#hero-summary p {
-  font-size: 14px;
-  line-height: 22px;
-  margin-bottom: 20px;
+.featuring_h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+}
+/* I set the sizes(width and height) of all the svg the same. */
+/* 4. ---edeints--- */
+#ingredients {
+  margin-bottom: 100px;
 }
 
-/* 4. ---Main Hero Image Contact--- */
-
-.fas {
-  font-size: 42px;
-  color: #9a2018;
-  margin: 0 auto;
-  float: left;
+#ingredients p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px; 
 }
 
-.fa-mobile-alt {
-  margin-right: 10px;
-  margin-left: 3px;
-  margin-bottom: 20px;
+#nitrogen, #carbonated, #tropical {
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
-.fa-map-marker-alt {
-  margin-right: 10px;
+#flavours {
+  padding-top:35px;
+  padding-bottom: 35px;
 }
 
-#contact {
-  font-size: 11px;
-  background-color: #efefef;
-  padding-top: 30px;
-  padding-bottom: 30px;
+#can_svg {
+  display: block;
 }
 
-/* 5. ---Why Choose Us--- */
-
-#why-choose-us-nav {
-  padding-top: 20px;
+#flavors_details {
+  display: flex;
+  justify-content: center;
 }
 
-#why-choose-us-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#why-choose-us-nav ul li {
-  margin-bottom: 15px;
+/* #flavors_details p {
+  margin-top: 15px;
+} */
+#grape, #lime, #pineapple {
+  padding-right: 40px;
 }
 
-#why-choose-us-nav ul li a {
-  color: inherit;
-  padding: 5px;
+
+/* 5.  Introducing Quatro Flavours */
+#introduction-flavour-box p {
+  margin: 30px 0;
+  line-height: 30px;
 }
 
-#why-choose-us-nav ul li a.selected {
-  border-left: #9a2018 solid 5px;
-}
-
-#why-choose-us-hero-con {
-  background: url(../images/why-choose-us-hero.jpg) no-repeat;
-  height: 195px;
-}
-
-#why-choose-us-heading-box {
-  align-self: end;
-}
-
-.why-choose-us-image {
-  float: left;
-  margin-right: 20px;
+.body-button {
+  background-color: #94DA00;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
   margin-top: 30px;
+  border-radius: 30px;
+  border: none;
+  color:#333;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 10px 20px;
+}
+/*  6.  Featuring Product */
+
+/* 7.  Subscribe */
+#subscribe-con {
+  padding: 80px 20px;
+  background-color: rgba(3, 23, 73, 0.50);
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  font-family: "IBM Plex Mono", monospace;
 }
 
-.why-choose-us-image-con h2 {
-  font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-
-.why-choose-us-image-con p {
-  font-size: 12px;
-  margin-bottom: 20px;
-  line-height: 20px;
-}
-
-.why-choose-us-image-con a {
-  color: #707070;
-  font-size: 12px;
-}
-
-#why-choose-us-bottom-nav {
-  background-color: #cf6666;
-  padding: 10px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-#why-choose-us-bottom-nav ol {
-  list-style-type: none;
-  margin: 0 0 0 20px;
-  padding: 0;
-}
-
-#why-choose-us-bottom-nav ol li {
-  display: inline;
-}
-
-#why-choose-us-bottom-nav ol li a {
-  padding: 5px;
+#subscribe-con p {
   color: #fff;
 }
 
-/* 6. ---About & FAQ--- */
-
-#about-hero-con {
-  background: url(../images/about-us-hero.jpg) no-repeat;
-  height: 195px;
+#subscribe-quatro-box h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 45px;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-#about-hero-heading-box {
-  align-self: end;
+#subscribe-form form {
+  display: flex;
+  align-items: center;
 }
 
-#about-us-text {
-  padding-bottom: 60px;
-}
-
-#about-us-text p {
-  font-size: 14px;
-  margin-bottom: 20px;
-  line-height: 22px;
-}
-
-#about-us-text-column2 {
-  font-style: italic;
-}
-
-#faq-con {
-  background-color: #f4f4f4;
-  padding-top: 35px;
-  padding-bottom: 30px;
-}
-
-#faq-con h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-#faq-con h2 span {
-  color: #9a2018;
-  font-size: 16px;
-}
-
-.faq-items {
-  margin-bottom: 16px;
-}
-
-.faq-items h3 {
-  background: #e8e7e7;
-  padding: 16px;
-  font-size: 16px;
-}
-
-.faq-items ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.faq-items li {
-  padding: 8px 0;
-  border-bottom: 1px solid #9a2018;
-}
-
-.faq-items a {
-  color: inherit;
-  font-size: 13px;
-}
-
-#faq-text-con {
+#subscribe-form input[type="text"] {
+  width: 513px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* 7. ---Contact--- */
+.signup_button {
+  border-radius: 5px;
+  background-color: #94DA00;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  color:#333;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 20px;
+}
 
+.signup_button:hover {
+    background-color: #1dda00af;
+  }
+
+/*  */
 #contact-hero-con {
   background: url(../images/contact-hero.jpg);
   height: 195px;
@@ -396,15 +340,33 @@ textarea {
   border-radius: 0;
 }
 
-/* 8. ---Footer--- */
+/* 8. ---Footer--- */ 
+
+#footer-nav li {
+  list-style: none;
+}
+
+#footer-nav a {
+  color:#626262;
+}
+
+
+#footer-nav a:hover {
+  color: #1dda00af;
+  transition-duration: .2s;
+}
+
+
+#footer-nav li:first-of-type {
+  font-weight: 900;
+  color:#333;
+}
 
 #footer-hero {
-  background-image: url(../images/footer.jpg);
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 40px;
   padding-bottom: 80px;
+  background: var(--Pink, rgba(254, 106, 180, 0.10));
 }
 
 #footer-hero h3 {
@@ -427,16 +389,22 @@ textarea {
   font-size: 11px;
 }
 
+#price-policy {
+  text-align: center;
+}
+
 /* ---Tablet Library Grid Styles--- */
+
 @media screen and (min-width: 768px) {
   #sticky-nav-con {
     position: sticky;
     top: 0px;
-    background-color: #fff;
-    border-bottom: solid 1px #c3c3c3;
+    background-color: #FFFBF3;
+    /* border-bottom: solid 1px #c3c3c3; */
     z-index: 1;
   }
- 
+
+  /* set the nav at the center on vertical line */
   #main-nav ul {
     line-height: 68px;
   }
@@ -455,7 +423,7 @@ textarea {
 
   #burger-con {
     display: block;
-    font-size: 12px;
+    font-size: 15px;
   }
 
   #burger-con ul li,
@@ -472,6 +440,7 @@ textarea {
     margin-right: 0px;
   }
 
+  /* change the size of the logo on tablet ver */
   #logo {
     margin-top: 5px;
     margin-bottom: 0;
@@ -479,12 +448,13 @@ textarea {
     max-width: 100px;
   }
 
-  #book-now-header {
+  #sign-header {
     display: flex;
     margin-right: -16px;
   }
 
-  .book-now {
+  /* Add transition */
+  .sign {
     background-color: #94DA00;
     transition: background-color 500ms linear;
     display: flex;
@@ -498,20 +468,47 @@ textarea {
     margin-top: 30px;
     border-radius: 5px;
   }
-  .book-now button {
+  .sign button {
     background: transparent;
     border: none;
     color:#333;
     font-weight: 900;
-    font-size: 10px;
+    font-size: 15px;
+  }
+  
+  #ingredients p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 16px; 
+  }
+
+  
+  #footer-logo-info,
+  #footer-privacy {
+    text-align: center;
   }
   
 }
 
 /* ---Desktop Library Grid Styles--- */
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1448px) {
+
+  #sticky-nav-con {
+    position: sticky;
+    top: 0px;
+    background-color: #FFFBF3;
+    /* border-bottom: solid 1px #c3c3c3; */
+    z-index: 1;
+  }
+
   #main-header {
     height: 110px;
+  }
+
+  body {
+    width: 1448px;
+    margin: 0 auto;
   }
 
   #main-nav {
@@ -520,13 +517,14 @@ textarea {
     margin-left: 25px;
   }
 
+  /* set the nav at the center on vertical line */
   #main-nav ul {
     line-height: 30px;
   }
 
 
   #burger-con {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 28px;
   }
 
@@ -534,14 +532,9 @@ textarea {
     margin-right: 25px;
   }
 
-  .book-now {
-    font-size: 18px;
-  }
-
-  /* change the name of id and class later */
-.book-now {
+  /* Booknoq => sign */
+.sign {
   background-color: #94DA00;
-  font-size: 16px;
   transition: background-color 500ms linear;
   display: flex;
   justify-content: center;
@@ -555,7 +548,7 @@ textarea {
   border-radius: 5px;
 }
 
-.book-now button {
+.sign button {
   background: transparent;
   border: none;
   color:#333;
@@ -563,9 +556,58 @@ textarea {
   font-size: 15px;
 }
 
-.book-now:hover {
-  /* We can change the color of background when its hoverd on */
+.sign:hover {
+  /* can change the color if it's needed. */
   background-color: #1dda00af;
+}
+
+#ingredients p {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 18px; 
+}
+
+#footer-logo-info,
+#footer-privacy {
+  text-align: center;
+}
+
+#footer-logo-info a img {
+  width: 60px; 
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+
+#footer-logo-info a img:hover {
+  transform: scale(1.1); 
+}
+
+#footer-nav nav {
+  display: flex;
+}
+#footer-nav nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer-nav nav li {
+  margin-bottom: 10px; 
+  font-weight: bold; 
+}
+
+#footer-nav nav li a {
+  color:#626262;
+  text-decoration: none; 
+  font-weight: normal; 
+  transition: color 0.3s ease; 
+}
+
+#footer-nav nav li a:hover {
+  color:#94DA00;
+}
+
+#footer-privacy {
+  padding-top: 20px;
 }
 
 }
