@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet" type="text/css" />
     <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -30,25 +33,24 @@
         <div id="logo" class="col-span-full col-start-3 col-end-4 m-col-start-1 m-col-end-4">
           <img src="images/main-green.svg" alt="Quatro Logo" />
         </div>
-        <!-- change the name of id and class later. -->
-        <div id="book-now-header" class="book-now col-span-2">
+        <!-- change the name of id -->
+        <div id="sign-header" class="sign col-span-2">
           <button>Sign in/ Register</button>
         </div>
       </header>
     </div>
-    <!-- Main Hero -->
-    <section id="hero" class="grid-con">
-      <h2 class="hidden">Video</h2>
-      <section id="video-box" class="box col-span-full"></section>
+    <!-- Main Hero / change the name of id -->
+    <section id="video-box" class="box col-span-full m-col-span-full l-col-span-full">
+      <h2>Video</h2>
     </section>
 
-    <!-- Ingredients -->
+    <!-- Ingredients / change the name of id -->
     <section id="ingredients">
       <div class="grid-con">
         <div id="nitrogen" class="box col-span-full m-col-start-1 m-col-end-8">
           <div id="snow_svg">
             <object
-              data="images/badge_object.svg"
+              data="images/snow.svg"
               type="image/svg+xml"
             ></object>
           </div>
@@ -65,7 +67,7 @@
         >
           <div id="bubble_svg">
             <object
-              data="images/badge_object.svg"
+              data="images/bubble.svg"
               type="image/svg+xml"
             ></object>
           </div>
@@ -78,7 +80,7 @@
         <div id="tropical" class="box col-span-full m-col-start-1 m-col-end-5">
           <div id="flamingo_svg">
             <object
-              data="images/badge_object.svg"
+              data="images/flamingo.svg"
               type="image/svg+xml"
             ></object>
           </div>
@@ -90,36 +92,38 @@
 
         <div id="flavours" class="box col-span-full m-col-start-5 m-col-end-13">
           <div id="can_svg">
-            <object
-              data="images/badge_object.svg"
+            <!-- <object
+              data="images/can.svg"
               type="image/svg+xml"
             ></object>
+             -->
+            <!-- hide for now -->
           </div>
-          <div>
+          <div id="flavors_details">
             <div id="grape">
               <object
-                data="images/badge_object.svg"
+                data="images/grape.svg"
                 type="image/svg+xml"
               ></object>
               <p>Grape <br />Sweet and Fruity</p>
             </div>
             <div id="lime">
               <object
-                data="images/badge_object.svg"
+                data="images/lime.svg"
                 type="image/svg+xml"
               ></object>
               <p>Lime <br />Citrusy and Festy</p>
             </div>
             <div id="pineapple">
               <object
-                data="images/badge_object.svg"
+                data="images/pineapple.svg"
                 type="image/svg+xml"
               ></object>
               <p>Pineapple <br />Tropical and juicy</p>
             </div>
             <div id="peach">
               <object
-                data="images/badge_object.svg"
+                data="images/peach.svg"
                 type="image/svg+xml"
               ></object>
               <p>Peach <br />Sweet and velvety</p>
@@ -134,10 +138,9 @@
       <div id="introduction-flavour-con" class="grid-con">
         <div
           id="introduction-flavour-box"
-          class="col-span-full m-col-start-1 m-col-end-7"
-        >
-          <h2 class="hero-img-h2">
-            Introducing Quatro: The Ultimate Tropical Nitrogen Beverage
+          class="col-span-full m-col-start-1 m-col-end-7">
+          <h2 class="introducing_h2">
+            INTRODUCING QUATRO: <br>THE ULTIMATE TROPICAL NITROGEN BEVERAGE
           </h2>
           <p>
             Quatro is not your ordinary carbonated drink. It is the perfect
@@ -146,13 +149,13 @@
             peach, and orange - Quatro will transport you to a tropical paradise
             with each sip.
           </p>
-          <a href="#"><button>Discover Our Flavors</button></a>
+          <a href="#"><button class="body-button">Discover Our Flavors</button></a>
         </div>
         <div
           id="can-render-1"
-          class="box col-span-full m-col-start-8 m-col-end-12"
+          class="box col-span-full m-col-start-8 m-col-end-13 "
         >
-          <img />
+        img
         </div>
       </div>
     </div>
@@ -162,98 +165,94 @@
       <div id="featuring-product-con" class="grid-con">
         <div
           id="featuring-product-box-left"
-          class="col-span-full m-col-start-1 m-col-end-7"
+          class="col-span-full m-col-start-1 m-col-end-8 l-col-start-1 l-col-end-8"
         >
-          <h2 class="hero-img-h2">Featuring Product</h2>
-          <div id="can-render-2" class="box"></div>
+          <h2 class="featuring_h2">Featuring Product</h2>
+          <div id="can-render-2" class="box">img</div>
           <p>
-            Mixed Flavours
-            <br /><span class="color_grey">12 x Can 473ml</span> <br />$10.99
+            <b>Mixed Flavours</b>
+            <br /><span class="color_grey">12 x Can 473ml</span> <br /><b>$10.99</b>
           </p>
         </div>
         <div
           id="featuring-product-box-right"
-          class="col-span-full m-col-start-8 m-col-end-12"
+          class="col-span-full m-col-start-9 m-col-end-12 l-col-start-9 l-col-end-12"
         >
           <div id="12can_img" class="box">
-            <img />
+            img
           </div>
-          <a href="#"><button>Buy Now</button></a>
+          <a href="#"><button class="body-button">Buy Now</button></a>
         </div>
       </div>
     </div>
 
     <!-- Subscribe -->
     <div id="subscribe-con">
-      <div id="subscribe-quatro-con" class="grid-con col-span-full">
-        <div id="subscribe-quatro-box" class="col-span-full">
-          <h2 class="hero-img-h2">Quatro</h2>
-          <p>The tropical super cold carbonated drink</p>
-          <div id="subscribe-form" class="col-span-full">
-            <form action="#" method="post" enctype="text/plain">
-              <input
-                name="contactInfo"
-                type="text"
-                required
-                placeholder="Enter your email"
-              />
-
-              <input name="submit" type="submit" value="Sign Up" />
-            </form>
+      <div id="subscribe-quatro-con" class="grid-con col-span-full m-col-span-full l-col-span-full">
+          <div id="subscribe-quatro-box" class="col-span-full">
+              <h2>Quatro</h2>
+              <p>The tropical super cold carbonated drink</p>
+              <div id="subscribe-form" class="col-span-full">
+                  <form action="#" method="post" enctype="text/plain">
+                      <input name="contactInfo" type="text" required placeholder="Enter your email" />
+                      <input class="signup_button" name="submit" type="submit" value="Sign Up" />
+                  </form>
+              </div>
+              <p>
+                  By clicking Sign Up you're confirming that you agree with our Terms and Conditions.
+              </p>
           </div>
-          <p>
-            By clicking Sign Up you're confirming that you agree with our Terms
-            and Conditions.
-          </p>
-        </div>
       </div>
-    </div>
+  </div>
 
-    <footer id="footer-hero" class="grid-con">
-      <section id="footer-logo-info" class="col-span-full">
+  <footer id="footer-hero" class="grid-con">
+    <section id="footer-logo-info" class="col-span-full m-col-span-full l-col-span-full">
         <img
-          src="images/couples_resort_logo.svg"
-          alt="Quatro Logo"
-          id="footer_loogo"
+            src="images/main-green.svg" type="image/svg+xml"
+            alt="Quatro Logo"
+            id="footer_loogo"
+            width="50px"
+            height="50px"
         />
-        <img src="images/couples_resort_logo.svg" alt="facebook" />
-        <img src="images/couples_resort_logo.svg" alt="linkid" />
-        <img src="images/couples_resort_logo.svg" alt="instagram" />
-        <img src="images/couples_resort_logo.svg" alt="youtube" />
-      </section>
-      <section id="footer-nav" class="col-span-full">
+        <br>
+        <a href="#"><img src="images/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="images/in.svg" alt="linkid" /></a>
+        <a href="#"><img src="images/ig.svg" alt="instagram" /></a>
+        <a href="#"><img src="images/youtube.svg" alt="youtube" /></a>
+    </section>
+    <section id="footer-nav" class="col-span-full">
         <nav>
-          <div>
-            <ul>
-              <li>About Us</li>
-              <li><a href="#">What are we?</a></li>
-              <li><a href="#">Flavours</a></li>
-              <li><a href="#">Products</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Need Help?</li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Privacy</li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Language</a></li>
-            </ul>
-          </div>
+            <div>
+                <ul>
+                    <li>About Us</li>
+                    <li><a href="#">What are we?</a></li>
+                    <li><a href="#">Flavours</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Need Help?</li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Privacy</li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Language</a></li>
+                </ul>
+            </div>
         </nav>
-      </section>
-      <div id="footer-privacy" class="col-span-full line-separator">
+    </section>
+    <div id="footer-privacy" class="col-span-full line-separator">
         <p id="price-policy">
-          @ 2024 The Coca‑Cola Company. All rights reserved.
+            &copy; 2024 The Coca‑Cola Company. All rights reserved.
         </p>
-      </div>
-    </footer>
+    </div>
+</footer>
 
     <script src="js/main.js"></script>
   </body>
