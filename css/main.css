@@ -26,7 +26,7 @@ Couples Resort Responsive Build
 }
 
 body {
-  background-color: #FFFBF3;
+  background-color: #fffbf3;
   color: #626262;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -70,13 +70,12 @@ textarea {
   font-weight: 900;
 }
 
-
 /* nav text align:center; */
 #burger-con ul {
   text-align: right;
 }
 
-#burger-con li{
+#burger-con li {
   padding-right: 10px;
 }
 
@@ -85,7 +84,7 @@ textarea {
 }
 
 #main-nav ul li a:hover {
-  color: #94DA00;
+  color: #94da00;
 }
 
 #main-nav ul {
@@ -117,7 +116,6 @@ textarea {
 #logo {
   margin-bottom: 20px;
   width: 100px;
-
 }
 /* 3. Hero => video */
 /* delete class="hidden" to see size of the box */
@@ -126,13 +124,12 @@ textarea {
   margin-bottom: 100px;
   font-size: 100px;
   padding: 100px;
-  background-color:#D9D9D9;
+  background-color: #d9d9d9;
 }
 
 #sign-header {
   display: none;
 }
-
 
 #sign-hero {
   height: 67px;
@@ -169,16 +166,18 @@ textarea {
 #ingredients p {
   margin-top: 15px;
   font-weight: 400;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
-#nitrogen, #carbonated, #tropical {
+#nitrogen,
+#carbonated,
+#tropical {
   padding-top: 35px;
   padding-bottom: 35px;
 }
 
 #flavours {
-  padding-top:35px;
+  padding-top: 35px;
   padding-bottom: 35px;
 }
 
@@ -194,10 +193,11 @@ textarea {
 /* #flavors_details p {
   margin-top: 15px;
 } */
-#grape, #lime, #pineapple {
+#grape,
+#lime,
+#pineapple {
   padding-right: 40px;
 }
-
 
 /* 5.  Introducing Quatro Flavours */
 #introduction-flavour-box p {
@@ -206,7 +206,7 @@ textarea {
 }
 
 .body-button {
-  background-color: #94DA00;
+  background-color: #94da00;
   transition: background-color 500ms linear;
   display: flex;
   justify-content: center;
@@ -215,7 +215,7 @@ textarea {
   margin-top: 30px;
   border-radius: 30px;
   border: none;
-  color:#333;
+  color: #333;
   font-weight: 900;
   font-size: 13px;
   padding: 10px 20px;
@@ -225,9 +225,9 @@ textarea {
 /* 7.  Subscribe */
 #subscribe-con {
   padding: 80px 20px;
-  background-color: rgba(3, 23, 73, 0.50);
+  background-color: rgba(3, 23, 73, 0.5);
   border: 1px solid #ddd;
-  border-radius: 5px; 
+  border-radius: 5px;
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -259,22 +259,22 @@ textarea {
 
 .signup_button {
   border-radius: 5px;
-  background-color: #94DA00;
+  background-color: #94da00;
   transition: background-color 500ms linear;
   display: flex;
   justify-content: center;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   border: none;
-  color:#333;
+  color: #333;
   font-weight: 900;
   font-size: 13px;
   padding: 20px;
 }
 
 .signup_button:hover {
-    background-color: #1dda00af;
-  }
+  background-color: #1dda00af;
+}
 
 /*  */
 #contact-hero-con {
@@ -340,33 +340,67 @@ textarea {
   border-radius: 0;
 }
 
-/* 8. ---Footer--- */ 
+/* 8. ---Footer--- */
 
 #footer-nav li {
   list-style: none;
 }
 
 #footer-nav a {
-  color:#626262;
+  color: #626262;
 }
-
 
 #footer-nav a:hover {
   color: #1dda00af;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
 }
-
 
 #footer-nav li:first-of-type {
   font-weight: 900;
-  color:#333;
+  color: #333;
+}
+
+#footer-nav2 li {
+  list-style: none;
+}
+
+#footer-nav2 a {
+  color: #626262;
+}
+
+#footer-nav2 a:hover {
+  color: #1dda00af;
+  transition-duration: 0.2s;
+}
+
+#footer-nav2 li:first-of-type {
+  font-weight: 900;
+  color: #333;
+}
+
+#footer-nav3 li {
+  list-style: none;
+}
+
+#footer-nav3 a {
+  color: #626262;
+}
+
+#footer-nav3 a:hover {
+  color: #1dda00af;
+  transition-duration: 0.2s;
+}
+
+#footer-nav3 li:first-of-type {
+  font-weight: 900;
+  color: #333;
 }
 
 #footer-hero {
   font-size: 16px;
   margin-top: 40px;
   padding-bottom: 80px;
-  background: var(--Pink, rgba(254, 106, 180, 0.10));
+  background: var(--Pink, rgba(254, 106, 180, 0.1));
 }
 
 #footer-hero h3 {
@@ -390,7 +424,15 @@ textarea {
 }
 
 #price-policy {
+  margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
+}
+#footer_logo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 80px;
+  height: 80px;
 }
 
 /* ---Tablet Library Grid Styles--- */
@@ -399,7 +441,7 @@ textarea {
   #sticky-nav-con {
     position: sticky;
     top: 0px;
-    background-color: #FFFBF3;
+    background-color: #fffbf3;
     /* border-bottom: solid 1px #c3c3c3; */
     z-index: 1;
   }
@@ -455,7 +497,7 @@ textarea {
 
   /* Add transition */
   .sign {
-    background-color: #94DA00;
+    background-color: #94da00;
     transition: background-color 500ms linear;
     display: flex;
     justify-content: center;
@@ -471,33 +513,35 @@ textarea {
   .sign button {
     background: transparent;
     border: none;
-    color:#333;
+    color: #333;
     font-weight: 900;
     font-size: 15px;
   }
-  
+
   #ingredients p {
     margin-top: 15px;
     font-weight: 400;
-    font-size: 16px; 
+    font-size: 16px;
   }
 
-  
-  #footer-logo-info,
   #footer-privacy {
     text-align: center;
   }
-  
+  #footer_logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 /* ---Desktop Library Grid Styles--- */
 
 @media screen and (min-width: 1448px) {
-
   #sticky-nav-con {
     position: sticky;
     top: 0px;
-    background-color: #FFFBF3;
+    background-color: #fffbf3;
     /* border-bottom: solid 1px #c3c3c3; */
     z-index: 1;
   }
@@ -522,7 +566,6 @@ textarea {
     line-height: 30px;
   }
 
-
   #burger-con {
     font-size: 20px;
     margin-top: 28px;
@@ -533,81 +576,133 @@ textarea {
   }
 
   /* Booknoq => sign */
-.sign {
-  background-color: #94DA00;
-  transition: background-color 500ms linear;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-style: italic;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  max-width: 170px;
-  max-height: 50px;
-  margin-top: 30px;
-  border-radius: 5px;
-}
+  .sign {
+    background-color: #94da00;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    max-width: 170px;
+    max-height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
 
-.sign button {
-  background: transparent;
-  border: none;
-  color:#333;
-  font-weight: 900;
-  font-size: 15px;
-}
+  .sign button {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-weight: 900;
+    font-size: 15px;
+  }
 
-.sign:hover {
-  /* can change the color if it's needed. */
-  background-color: #1dda00af;
-}
+  .sign:hover {
+    /* can change the color if it's needed. */
+    background-color: #1dda00af;
+  }
 
-#ingredients p {
-  margin-top: 15px;
-  font-weight: 400;
-  font-size: 18px; 
-}
+  #ingredients p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+  }
 
-#footer-logo-info,
-#footer-privacy {
-  text-align: center;
-}
+  #footer-privacy {
+    text-align: center;
+  }
 
-#footer-logo-info a img {
-  width: 60px; 
-  height: 60px;
-  transition: transform 0.3s ease;
-}
+  #footer-logo-info a img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
 
-#footer-logo-info a img:hover {
-  transform: scale(1.1); 
-}
+  #footer-logo-info a img:hover {
+    transform: scale(1.1);
+  }
 
-#footer-nav nav {
-  display: flex;
-}
-#footer-nav nav ul {
-  list-style: none;
-  padding: 0;
-}
+  #footer-nav nav {
+    display: flex;
+  }
+  #footer-nav nav ul {
+    list-style: none;
+    padding: 0;
+  }
 
-#footer-nav nav li {
-  margin-bottom: 10px; 
-  font-weight: bold; 
-}
+  #footer-nav nav li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
 
-#footer-nav nav li a {
-  color:#626262;
-  text-decoration: none; 
-  font-weight: normal; 
-  transition: color 0.3s ease; 
-}
+  #footer-nav nav li a {
+    color: #626262;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+  }
 
-#footer-nav nav li a:hover {
-  color:#94DA00;
-}
+  #footer-nav nav li a:hover {
+    color: #94da00;
+  }
 
-#footer-privacy {
-  padding-top: 20px;
-}
+  #footer-nav2 nav {
+    display: flex;
+  }
+  #footer-nav2 nav ul {
+    list-style: none;
+    padding: 0;
+  }
 
+  #footer-nav2 nav li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  #footer-nav2 nav li a {
+    color: #626262;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+  }
+
+  #footer-nav2 nav li a:hover {
+    color: #94da00;
+  }
+  #footer-na3 nav {
+    display: flex;
+  }
+  #footer-na3 nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #footer-nav3 nav li {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  #footer-nav3 nav li a {
+    color: #626262;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+  }
+
+  #footer-nav3 nav li a:hover {
+    color: #94da00;
+  }
+
+  #footer-privacy {
+    padding-top: 20px;
+  }
+
+  #footer_logo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 80px;
+  }
 }

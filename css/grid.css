@@ -42,7 +42,7 @@ h5 {
 }
 
 .box {
-  background: #F7F7F7;
+  background: #f7f7f7;
   color: #626262;
   border-radius: 5px;
   padding: 20px;
@@ -53,6 +53,36 @@ h5 {
   /* font-size: 18px; */
   font-weight: 300;
   font-style: normal;
+}
+
+.canbox {
+  background: #f7f7f7;
+  color: #626262;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Jaro", sans-serif;
+  /* font-size: 18px; */
+  font-weight: 300;
+  font-style: normal;
+  height: 400px;
+}
+
+.packbox {
+  background: #f7f7f7;
+  color: #626262;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Jaro", sans-serif;
+  /* font-size: 18px; */
+  font-weight: 300;
+  font-style: normal;
+  height: 300px;
 }
 /* ---Mobile Library Grid Styles--- */
 /* 그리드 위드 키움 */
@@ -290,7 +320,7 @@ h5 {
 
   .grid-con {
     display: grid;
-    grid-template-columns: repeat(12, 1fr); 
+    grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 30px;
   }
   .l-col-auto {
