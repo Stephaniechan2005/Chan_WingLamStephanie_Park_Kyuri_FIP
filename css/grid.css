@@ -42,31 +42,31 @@ h5 {
 }
 
 .box {
-  background: pink;
-  color: #fff;
+  background: #F7F7F7;
+  color: #626262;
   border-radius: 5px;
   padding: 20px;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Jaro", sans-serif;
-  font-size: 18px;
+  /* font-size: 18px; */
   font-weight: 300;
   font-style: normal;
 }
 /* ---Mobile Library Grid Styles--- */
-
+/* 그리드 위드 키움 */
 .full-width-grid-con {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  grid-template-columns: 1fr minmax(0, 1448px) 1fr;
 }
 
+/* 여기 column5 추가 위드키움*/
 .grid-con {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* add one more colums */
   column-gap: 30px;
-  max-width: 1200px;
+  max-width: 1448px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -136,7 +136,6 @@ h5 {
 .col-end-6 {
   grid-column-end: 6;
 }
-
 .col-end-auto {
   grid-column-end: auto;
 }
@@ -282,13 +281,18 @@ h5 {
 }
 
 /* ---Desktop Library Grid Styles--- */
-@media screen and (min-width: 1200px) {
-  .grid-con {
+@media screen and (min-width: 1448px) {
+  /* .grid-con {
     grid-column-gap: 30px;
     padding-left: 15px;
     padding-right: 15px;
-  }
+  } */
 
+  .grid-con {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-column-gap: 30px;
+  }
   .l-col-auto {
     grid-column: auto;
   }
