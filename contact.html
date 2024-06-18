@@ -31,17 +31,18 @@
             </ul>
           </div>
         </nav>
-        <div id="logo" class="col-span-full m-col-start-1 m-col-end-4">
-          <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo" />
+        <div id="logo" class="col-start-3 col-end-4 m-col-start-1 m-col-end-4">
+          <img src="images/main-green.svg" alt="Quatro Logo" />
         </div>
-        <div id="sign-header" class="book-now col-span-2">
+        <!-- change the name of id -->
+        <div id="sign-header" class="sign col-span-2">
           <button>Sign in/ Register</button>
         </div>
       </header>
     </div>
     <!-- Contact form -->
     <section class="grid-con">
-      <div class="col-span-full m-col-start-1 m-col-end-7">
+      <div id="contact-form" class="col-span-full m-col-start-1 m-col-end-7">
         <h2>Contact Us</h2>
         <div id="contact-hero-text">
           <p>
@@ -70,22 +71,54 @@
           </form>
         </div>
       </div>
-      <div id="pineapple" class="box m-col-start-7 m-col-end-13"></div>
+      <div id="pineapple_contact" class="m-col-start-8 m-col-end-13">
+        <img
+          sizes="(max-width: 498px) 100vw, 498px"
+          srcset="
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_240.png 240w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_276.png 276w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_308.png 308w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_339.png 339w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_368.png 368w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_396.png 396w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_423.png 423w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_448.png 448w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_473.png 473w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_490.png 490w,
+            images/pineapplewithsunglasses_yilrdt_c_scale,w_498.png 498w
+          "
+          src="images/pineapplewithsunglasses_yilrdt_c_scale,w_498.png"
+          alt="pineapple with sunglasses"
+        />
+      </div>
     </section>
 
     <footer id="footer-hero" class="grid-con">
-      <section id="footer-logo-info" class="col-span-full">
-        <img
-          src="images/couples_resort_logo.svg"
-          alt="Quatro Logo"
-          id="footer_loogo"
-        />
-        <img src="images/couples_resort_logo.svg" alt="facebook" />
-        <img src="images/couples_resort_logo.svg" alt="linkid" />
-        <img src="images/couples_resort_logo.svg" alt="instagram" />
-        <img src="images/couples_resort_logo.svg" alt="youtube" />
+      <section
+        id="footer-logo-info"
+        class="col-span-full m-col-start-3 m-col-end-6 l-col-start-2 l-col-end-5"
+      >
+        <h2 class="hidden">Footer Logo</h2>
+        <img src="images/main-green.svg" alt="Quatro Logo" id="footer_logo" />
+
+        <hr />
+        <br />
       </section>
-      <section id="footer-nav" class="col-span-full">
+      <section
+        id="footer-logo-info2"
+        class="col-span-full m-col-start-3 m-col-end-6 l-col-start-2 l-col-end-5"
+      >
+        <h2 class="hidden">Footer info</h2>
+        <a href="#"><img src="images/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="images/in.svg" alt="linkid" /></a>
+        <a href="#"><img src="images/ig.svg" alt="instagram" /></a>
+        <a href="#"><img src="images/youtube.svg" alt="youtube" /></a>
+      </section>
+      <section
+        id="footer-nav"
+        class="col-span-full m-col-start-6 m-col-end-8 l-col-start-6 l-col-end-8"
+      >
+        <h2 class="hidden">About Us</h2>
         <nav>
           <div>
             <ul>
@@ -95,26 +128,40 @@
               <li><a href="#">Products</a></li>
             </ul>
           </div>
+        </nav>
+      </section>
+      <section
+        id="footer-nav2"
+        class="col-span-full m-col-start-8 m-col-end-10 l-col-start-8 l-col-end-10"
+      >
+        <h2 class="hidden">Need Help</h2>
+        <nav>
           <div>
             <ul>
               <li>Need Help?</li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
               <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul>
-              <li>Privacy</li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Language</a></li>
             </ul>
           </div>
         </nav>
       </section>
+      <section
+        id="footer-nav3"
+        class="col-span-full m-col-start-10 m-col-end-12 l-col-start-10 l-col-end-12"
+      >
+        <h2 class="hidden">Privacy</h2>
+        <nav>
+          <ul>
+            <li>Privacy</li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Language</a></li>
+          </ul>
+        </nav>
+      </section>
       <div id="footer-privacy" class="col-span-full line-separator">
         <p id="price-policy">
-          @ 2024 The Coca‑Cola Company. All rights reserved.
+          &copy; 2024 The Coca-Cola Company. All rights reserved.
         </p>
       </div>
     </footer>
