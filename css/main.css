@@ -121,11 +121,10 @@ textarea {
 /* 3. Hero => video */
 /* delete class="hidden" to see size of the box */
 #video-box {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 100px;
   padding: 100px;
-  background-color: #d9d9d9;
 }
 
 #sign-header {
