@@ -13,7 +13,8 @@ Couples Resort Responsive Build
     5.  Introducing Quatro Flavours
     6.  Featuring Product
     7.  Subscribe
-    8.  Footer
+    8.  Testimonial
+    9.  Footer
     9.  Contact Page
  */
 
@@ -48,6 +49,19 @@ textarea {
   color: #9a2018;
 }
 
+h2 {
+  font-family: "kon-tiki-aloha-jf", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "kon-tiki-aloha-jf", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
 /* 2. ---Main Nav--- */
 
 #main-nav button {
@@ -313,7 +327,27 @@ textarea {
   margin-bottom: 25px;
 }
 
-/* 8. ---Footer--- */
+/* 8. --Testimonial-- */
+
+#client-con {
+  margin-bottom: 30px;
+}
+
+#testimonial-con {
+  display: contents;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa {
+  font-size: 30px;
+  margin-top: 20px;
+}
+/* 9. ---Footer--- */
 
 #footer-nav li {
   list-style: none;
