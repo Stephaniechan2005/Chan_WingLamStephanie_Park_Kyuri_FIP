@@ -145,8 +145,10 @@ textarea {
 }
 
 .introducing_h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: "kon-tiki-aloha-jf", sans-serif;
   font-size: 45px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #featuring-con {
@@ -154,8 +156,10 @@ textarea {
 }
 
 .featuring_h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: "kon-tiki-aloha-jf", sans-serif;
   font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
 }
 /* I set the sizes(width and height) of all the svg the same. */
 /* 4. ---edeints--- */
@@ -238,7 +242,9 @@ textarea {
 }
 
 #subscribe-quatro-box h2 {
-  font-family: "Kanit", sans-serif;
+  font-family: "kon-tiki-aloha-jf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 45px;
   color: #fff;
   margin-bottom: 10px;
