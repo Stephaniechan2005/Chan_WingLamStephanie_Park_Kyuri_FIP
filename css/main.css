@@ -14,8 +14,9 @@ Couples Resort Responsive Build
     6.  Featuring Product
     7.  Subscribe
     8.  Testimonial
-    9.  Footer
-    9.  Contact Page
+    9.  Gallery
+    10.  Footer
+    11.  Contact Page
  */
 
 /* 1. ---General Styles--- */
@@ -361,7 +362,50 @@ button {
 .testimonial-level {
   text-align: center;
 }
-/* 9. ---Footer--- */
+
+/* 9. ---Gallery--- */
+#gallery_header {
+  display: flex;
+  align-items: center;
+}
+
+#slider-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#image-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#prev-btn {
+  left: 0px;
+}
+
+#next-btn {
+  right: 0px;
+}
+/* 10. ---Footer--- */
 
 #footer-nav li {
   list-style: none;
@@ -456,7 +500,7 @@ button {
   height: 80px;
 }
 
-/*9. Contact Page */
+/*11. Contact Page */
 
 #pineapple_contact {
   display: none;
