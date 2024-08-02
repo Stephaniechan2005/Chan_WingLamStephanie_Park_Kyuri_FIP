@@ -12,11 +12,12 @@ Couples Resort Responsive Build
     4.  edients
     5.  Introducing Quatro Flavours
     6.  Featuring Product
-    7.  Subscribe
-    8.  Testimonial
-    9.  Gallery
-    10.  Footer
-    11.  Contact Page
+    7.  Flavous
+    8.  Subscribe
+    9.  Testimonial
+    10.  Gallery
+    11. Footer
+    12. Contact Page
  */
 
 /* 1. ---General Styles--- */
@@ -243,7 +244,42 @@ h3 {
 }
 /*  6.  Featuring Product */
 
-/* 7.  Subscribe */
+/* 7.  Flavours */
+
+#flavours-con {
+  margin-bottom: 30px;
+}
+#flavours-can {
+  display: flex;
+  flex-direction: column;
+}
+
+#flavours-header {
+  text-align: center;
+}
+
+.product-flavours-part {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.body-button-round {
+  background-color: #94da00;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  color: #333;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 10px 20px;
+  width: 30px;
+  align-self: flex-end;
+}
+/* 8.  Subscribe */
 #subscribe-con {
   padding: 80px 20px;
   background-color: rgba(3, 23, 73, 0.5);
@@ -328,7 +364,7 @@ h3 {
   margin-bottom: 25px;
 }
 
-/* 8. --Testimonial-- */
+/* 9. --Testimonial-- */
 
 #client-con {
   margin-bottom: 30px;
@@ -363,7 +399,7 @@ button {
   text-align: center;
 }
 
-/* 9. ---Gallery--- */
+/* 10. ---Gallery--- */
 #gallery_header {
   display: flex;
   align-items: center;
@@ -405,7 +441,7 @@ button {
 #next-btn {
   right: 0px;
 }
-/* 10. ---Footer--- */
+/* 11. ---Footer--- */
 
 #footer-nav li {
   list-style: none;
@@ -500,7 +536,7 @@ button {
   height: 80px;
 }
 
-/*11. Contact Page */
+/*12. Contact Page */
 
 #pineapple_contact {
   display: none;
@@ -649,6 +685,10 @@ textarea {
     font-weight: 400;
     font-size: 16px;
   }
+  #flavours-can {
+    display: flex;
+    flex-direction: row;
+  }
 
   #testimonial {
     margin-top: 30px;
@@ -756,6 +796,10 @@ textarea {
     font-size: 18px;
   }
 
+  #flavours-can {
+    display: flex;
+    flex-direction: row;
+  }
   #footer-privacy {
     text-align: center;
   }
