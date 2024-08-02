@@ -41,10 +41,13 @@ const testimonials = [
 
 function displayTestimonial() {
   const testimonialDiv = document.createElement("div");
-  testimonialDiv.classList.add("col-span-full");
+  // testimonialDiv.classList.add("col-span-full");
   const testimonialParagraph = document.createElement("h4");
+  testimonialParagraph.classList.add("testimonial-paragraph");
   const testimonialName = document.createElement("p");
+  testimonialName.classList.add("testimonial-name");
   const testimonialCustomerLevel = document.createElement("p");
+  testimonialCustomerLevel.classList.add("testimonial-level");
 
   testimonialName.textContent = testimonials[count].name;
   testimonialCustomerLevel.textContent = testimonials[count].customerlevel;
