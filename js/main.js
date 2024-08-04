@@ -6,7 +6,7 @@ let count = 0;
 const slider = document.querySelector("#image-slider");
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
-let slideWidth = slider.clientWidth;
+let slideWidth;
 let currentIndex = 0;
 
 (function () {
@@ -120,9 +120,17 @@ function prevSlide() {
   showSlide(currentIndex);
 }
 
-function updateSlideWidth() {
+/*function updateSlideWidth() {
+    slideWidth = slider.clientWidth;
+    showSlide(currentIndex); // Adjust the position of the current slide on resize
+  }*/
+
+if (slider) {
   slideWidth = slider.clientWidth;
-  showSlide(currentIndex); // Adjust the position of the current slide on resize
+  function updateSlideWidth() {
+    slideWidth = slider.clientWidth;
+    showSlide(currentIndex); // Adjust the position of the current slide on resize
+  }
 }
 
 // Attach click event handlers to buttons using event listeners
