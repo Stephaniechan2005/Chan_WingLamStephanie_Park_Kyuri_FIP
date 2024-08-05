@@ -601,6 +601,148 @@ textarea {
   background-color: #1dda00af;
 }
 
+#lime-images {
+  /* put image later*/
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 100px;
+  padding: 100px;
+  background-color: #333;
+  justify-content: space-between;
+}
+
+/* Flavour Details Section */
+#lime-detail-sec,
+#peach-detail-sec,
+#pineapple-detail-sec,
+#grape-detail-sec {
+  display: flex;
+  justify-content: space-evenly; /* Align items to the edges */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 50px;
+}
+
+.render-buttons-pair {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.render-buttons-pair img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flavour-button-big-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px; /* Adjusted margin for better spacing */
+}
+
+.flavour-button-box {
+  background-color: #94da00;
+  transition: background-color 500ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 90px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 30px;
+}
+
+.flavour-button-box:hover {
+  background-color: #1dda00af;
+}
+
+.flavour-button-big-box button {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+/* Flavour Detail Box */
+.flavour-detail-box {
+  max-width: 600px; /* Adjust width as needed */
+}
+
+.flavour-detail-box p {
+  padding-top: 10px; /* Reduced padding for a tighter layout */
+  line-height: 25px;
+  font-size: 14px; /* Slightly smaller font size */
+}
+
+.flavour-detail-box h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px; /* Adjust font size for consistency */
+}
+
+.flavour-icon-pair {
+  display: flex;
+  align-items: center;
+}
+
+.flavour-icon-pair h2 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.flavour-icon-pair img {
+  max-width: 55px;
+  max-height: 55px;
+  margin-left: 20px; /* Adjusted margin for better alignment */
+  margin-top: 33px;
+}
+
+/* Detail Summary Box */
+.view-nutrition-box {
+  margin-top: 10px; /* Adjusted margin for spacing */
+  width: 95%;
+}
+
+details {
+  border: none;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+summary {
+  background-color: #efefef;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+details p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.nutrition-table {
+  width: 90%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.nutrition-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.nutrition-table td:first-child {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
 /* ---Tablet Library Grid Styles--- */
 
 @media screen and (min-width: 768px) {
@@ -722,6 +864,49 @@ textarea {
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  /* Flavour Detail Box */
+  .flavour-detail-box {
+    margin-top: 10px;
+  }
+  .flavour-icon-pair h2 {
+    font-size: 50px;
+    margin-top: 30px;
+  }
+  .flavour-detail-box p {
+    line-height: 30px;
+    padding-top: 30px;
+    font-size: 18px; /* Slightly smaller font size */
+  }
+
+  .flavour-detail-box h4 {
+    padding-top: 30px;
+    font-size: 18px; /* Adjust font size for consistency */
+  }
+  details {
+    font-size: 16px;
+  }
+
+  summary {
+    font-size: 16px;
+  }
+
+  .flavour-button-box {
+    background-color: #94da00;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 110px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50px;
+  }
+  .flavour-button-big-box button {
+    font-size: 15px;
   }
 }
 
@@ -912,7 +1097,8 @@ textarea {
 }
 
 /*---- Products page desktop ----*/
-#lime-images {/* put image later*/
+#lime-images {
+  /* put image later*/
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -920,134 +1106,4 @@ textarea {
   padding: 100px;
   background-color: #333;
   justify-content: space-between;
-}
-
-/* Flavour Details Section */
-#lime-detail-sec,
-#peach-detail-sec,
-#pineapple-detail-sec,
-#grape-detail-sec {
- display: flex;
- justify-content: space-evenly; /* Align items to the edges */
- align-items: flex-start; /* Align items to the top */
- margin-top: 50px;
-}
-
-.render-buttons-pair {
- display: flex;
- flex-direction: column; /* Align items vertically */
- align-items: center; /* Center items horizontally */
-}
-
-.render-buttons-pair img {
- max-width: 450px;
- max-height: 450px;
-}
-
-.flavour-button-big-box {
- display: flex;
- justify-content: space-evenly;
- margin-top: 20px; /* Adjusted margin for better spacing */
-}
-
-.flavour-button-box {
- background-color: #94da00;
- transition: background-color 500ms linear;
- display: flex;
- justify-content: center;
- align-items: center;
- font-style: italic;
- transition: all 0.3s ease;
- cursor: pointer;
- width: 110px;
- height: 50px;
- margin: 5px;
- border-radius: 50px;
-}
-
-.flavour-button-box:hover {
- background-color: #1dda00af;
-}
-
-
-.flavour-button-big-box button {
- background: transparent;
- border: none;
- color: #333;
- font-weight: 900;
- font-size: 15px;
-}
-
-/* Flavour Detail Box */
-.flavour-detail-box {
- margin-top: 30px;
- max-width: 600px; /* Adjust width as needed */
-}
-
-.flavour-detail-box p {
- padding-top: 30px; /* Reduced padding for a tighter layout */
- line-height: 30px;
- font-size: 18px; /* Slightly smaller font size */
-}
-
-.flavour-detail-box h4 {
- padding-top: 30px;
- padding-bottom: 30px;
- font-size: 18px; /* Adjust font size for consistency */
-}
-
-.flavour-icon-pair {
- display: flex;
- align-items: center;
-}
-
-.flavour-icon-pair h2 {
- font-size: 50px;
- margin-top: 30px;
-}
-
-.flavour-icon-pair img {
- max-width: 55px;
- max-height: 55px;
- margin-left: 20px; /* Adjusted margin for better alignment */
- margin-top: 33px;
-}
-
-/* Detail Summary Box */
-.view-nutrition-box {
- margin-top: 20px; /* Adjusted margin for spacing */
-}
-
-details {
- border: none;
- padding: 10px 0;
-}
-
-summary {
- background-color: #efefef;
- padding: 10px;
- cursor: pointer;
- font-weight: bold;
-}
-
-details p {
- margin-bottom: 0;
- padding-bottom: 0;
-}
-
-.nutrition-table {
- width: 100%;
- border-collapse: collapse;
- margin-top: 10px;
-}
-
-.nutrition-table td {
- border: 1px solid #ddd;
- padding: 8px;
- text-align: left;
-}
-
-.nutrition-table td:first-child {
- background-color: #f4f4f4;
- font-weight: bold;
 }
