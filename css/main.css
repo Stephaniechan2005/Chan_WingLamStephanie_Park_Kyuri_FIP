@@ -138,10 +138,8 @@ h3 {
 /* 3. Hero => video */
 /* delete class="hidden" to see size of the box */
 #video-box {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 100px;
-  padding: 100px;
 }
 
 #sign-header {
@@ -159,6 +157,8 @@ h3 {
 #introduction-con {
   font-weight: 400;
   font-size: 20px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .introducing_h2 {
@@ -166,10 +166,6 @@ h3 {
   font-size: 45px;
   font-weight: 400;
   font-style: normal;
-}
-
-#featuring-con {
-  margin: 100px 0;
 }
 
 .featuring_h2 {
@@ -185,7 +181,7 @@ h3 {
 /* I set the sizes(width and height) of all the svg the same. */
 /* 4. ---edeints--- */
 #ingredients {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 #ingredients p {
@@ -225,6 +221,11 @@ h3 {
 }
 
 /* 5.  Introducing Quatro Flavours */
+.featuring-product-box-left-flex {
+  display: flex;
+  justify-content: center;
+}
+
 #introduction-flavour-box p {
   margin: 30px 0;
   line-height: 30px;
@@ -795,6 +796,11 @@ details p {
     margin-right: 0px;
   }
 
+  #introduction-con {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
   /* change the size of the logo on tablet ver */
   #logo {
     margin-top: 5px;
@@ -829,6 +835,9 @@ details p {
     color: #333;
     font-weight: 900;
     font-size: 15px;
+  }
+  #ingredients {
+    margin-bottom: 50px;
   }
 
   #ingredients p {
