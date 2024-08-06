@@ -147,6 +147,8 @@ window.addEventListener("resize", updateSlideWidth);
 // Call updateSlideWidth initially to set the correct initial slide width
 updateSlideWidth();
 
+setInterval(nextSlide, 1500);
+
 function showSlide2(index) {
   const newTransformValue = -index * slideWidth2 + "px";
   //The -index is used to calculate the position of the slide in the opposite direction.
