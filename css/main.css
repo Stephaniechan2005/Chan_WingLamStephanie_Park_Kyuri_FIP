@@ -18,6 +18,7 @@ Couples Resort Responsive Build
     10.  Gallery
     11. Footer
     12. Contact Page
+    13.  Flavours Page
  */
 
 /* 1. ---General Styles--- */
@@ -601,6 +602,7 @@ textarea {
   background-color: #1dda00af;
 }
 
+/* 12.  Flavours Page */
 #lime-images {
   /* put image later*/
   text-align: center;
@@ -620,7 +622,6 @@ textarea {
   display: flex;
   justify-content: space-evenly; /* Align items to the edges */
   align-items: flex-start; /* Align items to the top */
-  margin-top: 50px;
 }
 
 .render-buttons-pair {
@@ -741,6 +742,10 @@ details p {
 .nutrition-table td:first-child {
   background-color: #f4f4f4;
   font-weight: bold;
+}
+
+#share {
+  margin-top: 20px;
 }
 
 /* ---Tablet Library Grid Styles--- */
