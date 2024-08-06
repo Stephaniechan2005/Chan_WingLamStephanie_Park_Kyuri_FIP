@@ -6,8 +6,13 @@ let count = 0;
 const slider = document.querySelector("#image-slider");
 const prevBtn = document.querySelector("#prev-btn");
 const nextBtn = document.querySelector("#next-btn");
+const slider2 = document.querySelector("#image-slider2");
+const prevBtn2 = document.querySelector("#prev-btn2");
+const nextBtn2 = document.querySelector("#next-btn2");
 let slideWidth;
+let slideWidth2;
 let currentIndex = 0;
+let currentIndex2 = 0;
 
 (function () {
   "use strict";
@@ -141,3 +146,53 @@ window.addEventListener("resize", updateSlideWidth);
 
 // Call updateSlideWidth initially to set the correct initial slide width
 updateSlideWidth();
+
+function showSlide2(index) {
+  const newTransformValue = -index * slideWidth2 + "px";
+  //The -index is used to calculate the position of the slide in the opposite direction.
+  // For example, if index is 1, then -index becomes -1, which means moving one slide width to the left.
+  // If index is 2, then -index becomes -2, which means moving two slide widths to the left.
+  console.log(newTransformValue);
+  slider2.style.transform = "translateX(" + newTransformValue + ")";
+}
+
+function nextSlide2() {
+  console.log(currentIndex2);
+  currentIndex2++;
+  //if count is greater than or equal to number of slides restart
+  if (currentIndex2 >= slider2.children.length) {
+    currentIndex2 = 0;
+  }
+  showSlide2(currentIndex2);
+}
+
+function prevSlide2() {
+  currentIndex2--;
+  // if count is less than 0 go to last slide
+  if (currentIndex2 < 0) {
+    currentIndex2 = slider2.children.length - 1;
+  }
+  showSlide2(currentIndex2);
+}
+
+/*function updateSlideWidth() {
+    slideWidth = slider.clientWidth;
+    showSlide(currentIndex); // Adjust the position of the current slide on resize
+  }*/
+
+if (slider2) {
+  slideWidth2 = slider2.clientWidth;
+  function updateSlideWidth2() {
+    slideWidth2 = slider2.clientWidth;
+    showSlide2(currentIndex); // Adjust the position of the current slide on resize
+  }
+}
+
+// Attach click event handlers to buttons using event listeners
+prevBtn2.addEventListener("click", prevSlide2);
+nextBtn2.addEventListener("click", nextSlide2);
+
+window.addEventListener("resize", updateSlideWidth2);
+
+// Call updateSlideWidth initially to set the correct initial slide width
+updateSlideWidth2();
