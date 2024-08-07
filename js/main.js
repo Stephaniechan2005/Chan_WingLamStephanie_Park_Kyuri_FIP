@@ -9,6 +9,31 @@ const nextBtn = document.querySelector("#next-btn");
 const slider2 = document.querySelector("#image-slider2");
 const prevBtn2 = document.querySelector("#prev-btn2");
 const nextBtn2 = document.querySelector("#next-btn2");
+
+let limepanels = document.querySelectorAll(".infopanellime"); // array
+let btnlime = document.querySelector("#swapbuttonlime");
+if (limepanels.length > 1) {
+  limepanels[1].classList.add("hidden");
+}
+
+let peachpanels = document.querySelectorAll(".infopanelpeach"); // array
+let btnpeach = document.querySelector("#swapbuttonpeach");
+if (peachpanels.length > 1) {
+  peachpanels[1].classList.add("hidden");
+}
+
+let pineapplepanels = document.querySelectorAll(".infopanelpineapple"); // array
+let btnpineapple = document.querySelector("#swapbuttonpineapple");
+if (pineapplepanels.length > 1) {
+  pineapplepanels[1].classList.add("hidden");
+}
+
+let grapepanels = document.querySelectorAll(".infopanelgrape"); // array
+let btngrape = document.querySelector("#swapbuttongrape");
+if (grapepanels.length > 1) {
+  grapepanels[1].classList.add("hidden");
+}
+
 let slideWidth;
 let slideWidth2;
 let currentIndex = 0;
@@ -62,9 +87,9 @@ function displayTestimonial() {
   testimonialName.textContent = testimonials[count].name;
   testimonialCustomerLevel.textContent = testimonials[count].customerlevel;
   testimonialParagraph.textContent = `${testimonials[count].testimonial}`;
-
-  testimonialCon.innerHTML = "";
-
+  if (testimonialCon) {
+    testimonialCon.innerHTML = "";
+  }
   testimonialDiv.appendChild(testimonialParagraph);
   testimonialDiv.appendChild(testimonialName);
   testimonialDiv.appendChild(testimonialCustomerLevel);
@@ -89,13 +114,14 @@ function previousTestimonial() {
   }
   displayTestimonial();
 }
+if (testimonialCon) {
+  displayTestimonial();
 
-displayTestimonial();
+  //setInterval(nextTestimonial, 1000);
 
-//setInterval(nextTestimonial, 1000);
-
-next.addEventListener("click", nextTestimonial);
-previous.addEventListener("click", previousTestimonial);
+  next.addEventListener("click", nextTestimonial);
+  previous.addEventListener("click", previousTestimonial);
+}
 
 function showSlide(index) {
   const newTransformValue = -index * slideWidth + "px";
@@ -136,19 +162,18 @@ if (slider) {
     slideWidth = slider.clientWidth;
     showSlide(currentIndex); // Adjust the position of the current slide on resize
   }
+
+  // Attach click event handlers to buttons using event listeners
+  prevBtn.addEventListener("click", prevSlide);
+  nextBtn.addEventListener("click", nextSlide);
+
+  window.addEventListener("resize", updateSlideWidth);
+
+  // Call updateSlideWidth initially to set the correct initial slide width
+  updateSlideWidth();
+
+  setInterval(nextSlide, 1500);
 }
-
-// Attach click event handlers to buttons using event listeners
-prevBtn.addEventListener("click", prevSlide);
-nextBtn.addEventListener("click", nextSlide);
-
-window.addEventListener("resize", updateSlideWidth);
-
-// Call updateSlideWidth initially to set the correct initial slide width
-updateSlideWidth();
-
-setInterval(nextSlide, 1500);
-
 function showSlide2(index) {
   const newTransformValue = -index * slideWidth2 + "px";
   //The -index is used to calculate the position of the slide in the opposite direction.
@@ -188,13 +213,80 @@ if (slider2) {
     slideWidth2 = slider2.clientWidth;
     showSlide2(currentIndex); // Adjust the position of the current slide on resize
   }
+
+  // Attach click event handlers to buttons using event listeners
+  prevBtn2.addEventListener("click", prevSlide2);
+  nextBtn2.addEventListener("click", nextSlide2);
+
+  window.addEventListener("resize", updateSlideWidth2);
+
+  // Call updateSlideWidth initially to set the correct initial slide width
+  updateSlideWidth2();
+}
+function showHideLime() {
+  if (limepanels[1].classList.contains("hidden")) {
+    // Show second panel, hide first
+    limepanels[0].classList.add("hidden");
+    limepanels[1].classList.remove("hidden");
+    btnlime.textContent = "Front";
+  } else {
+    // Show first panel, hide second
+    limepanels[1].classList.add("hidden");
+    limepanels[0].classList.remove("hidden");
+    btnlime.textContent = "Back";
+  }
+}
+if (btnlime) {
+  btnlime.addEventListener("click", showHideLime);
 }
 
-// Attach click event handlers to buttons using event listeners
-prevBtn2.addEventListener("click", prevSlide2);
-nextBtn2.addEventListener("click", nextSlide2);
+function showHidePeach() {
+  if (peachpanels[1].classList.contains("hidden")) {
+    // Show second panel, hide first
+    peachpanels[0].classList.add("hidden");
+    peachpanels[1].classList.remove("hidden");
+    btnpeach.textContent = "Front";
+  } else {
+    // Show first panel, hide second
+    peachpanels[1].classList.add("hidden");
+    peachpanels[0].classList.remove("hidden");
+    btnpeach.textContent = "Back";
+  }
+}
+if (btnpeach) {
+  btnpeach.addEventListener("click", showHidePeach);
+}
 
-window.addEventListener("resize", updateSlideWidth2);
+function showHidePineapple() {
+  if (pineapplepanels[1].classList.contains("hidden")) {
+    // Show second panel, hide first
+    pineapplepanels[0].classList.add("hidden");
+    pineapplepanels[1].classList.remove("hidden");
+    btnpineapple.textContent = "Front";
+  } else {
+    // Show first panel, hide second
+    pineapplepanels[1].classList.add("hidden");
+    pineapplepanels[0].classList.remove("hidden");
+    btnpineapple.textContent = "Back";
+  }
+}
+if (btnpineapple) {
+  btnpineapple.addEventListener("click", showHidePineapple);
+}
 
-// Call updateSlideWidth initially to set the correct initial slide width
-updateSlideWidth2();
+function showHideGrape() {
+  if (grapepanels[1].classList.contains("hidden")) {
+    // Show second panel, hide first
+    grapepanels[0].classList.add("hidden");
+    grapepanels[1].classList.remove("hidden");
+    btngrape.textContent = "Front";
+  } else {
+    // Show first panel, hide second
+    grapepanels[1].classList.add("hidden");
+    grapepanels[0].classList.remove("hidden");
+    btngrape.textContent = "Back";
+  }
+}
+if (btngrape) {
+  btngrape.addEventListener("click", showHideGrape);
+}

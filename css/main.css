@@ -796,6 +796,36 @@ details p {
   margin-top: 20px;
 }
 
+.infopanellime {
+  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+}
+.infopanelpeach {
+  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+}
+.infopanelpineapple {
+  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+}
+.infopanelgrape {
+  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* ---Tablet Library Grid Styles--- */
 
 @media screen and (min-width: 768px) {
