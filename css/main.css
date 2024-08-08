@@ -822,16 +822,16 @@ details p {
 }
 
 .infopanellime {
-  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+  animation: fadeIn 2s ease-out 1;
 }
 .infopanelpeach {
-  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+  animation: fadeIn 2s ease-out 1;
 }
 .infopanelpineapple {
-  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+  animation: fadeIn 2s ease-out 1;
 }
 .infopanelgrape {
-  animation: slideIn 2s ease-out 1, fadeIn 2s ease-out 1;
+  animation: fadeIn 2s ease-out 1;
 }
 
 @keyframes slideIn {
