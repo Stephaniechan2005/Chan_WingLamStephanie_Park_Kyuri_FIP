@@ -227,6 +227,293 @@ h3 {
   line-height: 30px;
 }
 
+#poster {
+  position: relative; /* Allow absolute positioning of child elements*/
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  background: url(../images/beachDay.png);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  object-fit: cover;
+}
+
+#poster .slider-image {
+  min-width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  object-fit: cover;
+}
+
+#poster .slider-image.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#poster .slider-image.visible {
+  opacity: 1;
+}
+
+#prev-btn-poster,
+#next-btn-poster {
+  position: absolute; /*position buttons relative to the #poster container*/
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+  /* border: 2px solid black; */
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+}
+
+#prev-btn-poster{
+  left: 0px;
+}
+
+#next-btn-poster {
+  right: 0px;
+}
+
+/* 애니 */
+.box1 {
+  position: absolute;
+  top: 130px;
+  left: 600px;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+  animation: logo 2s ease-out forwards;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+.box2 {
+  position: absolute;
+  top: 52px;
+  font-size: 100px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 0;
+  z-index: 2;
+  animation: textOne 2s ease-out 3s forwards;
+}
+
+
+@keyframes textOne {
+  0% {
+    opacity: 0;
+    transform: translateX(250px) translateY(0px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(250px) translateY(0px);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateX(250px) translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(250px) /*translateY(-400px)*/;
+  }
+}
+
+.box3 {
+  position: absolute;
+  top: 90px;
+  left: 45%;
+  font-size: 60px;
+  font-weight: bold;
+  opacity: 0;
+  color: #fff;
+  z-index: 3;
+  animation: textTwo 2s ease-out 3s forwards; 
+}
+
+@keyframes textTwo {
+  0% {
+    opacity: 0;
+    transform: translateX(5px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateX(5px);
+  }
+  75% {
+    opacity: 0.9;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box4 {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 800px;
+  height: 500px;
+  font-weight: bold;
+  opacity: 0;
+  color: #fff;
+  z-index: 4;
+  animation: canAni 3s ease-out 5s forwards; 
+}
+
+@keyframes canAni {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-10deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(0.8) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+
+.box5 {
+  position: absolute;
+  top: -50%;
+  left: 170px;
+  width: 400px;
+  height: 100px;
+  z-index: 3;
+  animation: pineapple 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+}
+
+@keyframes pineapple {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px) rotate(-30deg) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(250px) rotate(20deg) scale(1.2);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(400px) rotate(-10deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(535px) rotate(0deg) scale(1);
+  }
+}
+
+.box6 {
+  position: absolute;
+  top: -50%;
+  left: 385px;
+  width: 400px;
+  height: 110px;
+  z-index: 5;
+  animation: grape 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+}
+
+@keyframes grape {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(300px) scale(1.2);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(450px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(655px) scale(1);
+  }
+}
+
+.box7 {
+  position: absolute;
+  top: -50%;
+  left: 620px;
+  width: 400px;
+  height: 100px;
+  z-index: 5;
+  animation: limee 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+}
+
+@keyframes limee {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px) rotate(30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(320px) rotate(-15deg);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(470px) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(640px) rotate(0deg);
+  }
+}
+
+.box8 {
+  position: absolute;
+  top: -50%;
+  left: 770px;
+  width: 450px;
+  height: 150px;
+  z-index: 3;
+  animation: peach 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+}
+
+@keyframes peach {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(350px) scale(1.3);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(500px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(570px) scale(1);
+  }
+}
+
+/* Default styles (for larger screens) */
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+  position: absolute;
+}
+
+
 .body-button {
   background-color: #94da00;
   transition: background-color 500ms linear;
