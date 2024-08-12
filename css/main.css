@@ -945,6 +945,13 @@ textarea {
   margin-bottom: 10px;
   /* background-color: #333; */
   justify-content: space-between;
+  height: 400px;
+  background: url(../images/flavourBanner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  object-fit: cover;
+  color: #fff;
 }
 
 
