@@ -941,15 +941,12 @@ textarea {
 
 /* 12.  Flavours Page */
 #lime-images {
-  /* put image later*/
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 100px;
-  padding: 100px;
-  background-color: #333;
+  /* background-color: #333; */
   justify-content: space-between;
 }
+
 
 /* Flavour Details Section */
 #lime-detail-sec,
