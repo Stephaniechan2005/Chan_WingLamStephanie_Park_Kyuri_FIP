@@ -1177,7 +1177,7 @@ details p {
 
 .lightbox_close:hover {
   opacity: 0.5;
-  color: red;
+  color: #94da00;
 }
 
 .lightbox article {
@@ -1188,6 +1188,7 @@ details p {
 .lb_text,
 .lb_heading {
   text-align: center;
+  color: #fff;
 }
 
 .lb_heading {
