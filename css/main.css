@@ -1151,11 +1151,11 @@ details p {
   left: 0;
 
   background-color: rgba(0, 0, 0, 0.85);
-  background-image: url("../images/Cap_LB_Bg.png");
-  background-repeat: no-repeat;
+  /*background-image: url("../images/Cap_LB_Bg.png");
+  background-repeat: no-repeat;*/
 
-  background-size: 55vh; /* 55% of the viewport height */
-  background-position: 40px bottom;
+  /*background-size: 55vh;  55% of the viewport height 
+  background-position: 40px bottom;*/
 
   z-index: 5000;
 
@@ -1181,20 +1181,24 @@ details p {
 }
 
 .lightbox article {
-  width: 55%;
-  margin-left: 40%;
+  width: 100%;
   padding-top: 50px;
 }
 
 .lb_text,
 .lb_heading {
-  text-align: left;
+  text-align: center;
+}
+
+.lb_heading {
+  font-size: 80px;
 }
 
 .lb_text {
   line-height: 1.6 !important;
   margin-left: 0;
   padding-top: 2em;
+  font-size: 70px;
 }
 
 /* turn the lightbox on using the :target pseudo selector */

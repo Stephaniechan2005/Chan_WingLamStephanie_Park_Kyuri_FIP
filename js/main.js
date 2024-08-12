@@ -39,6 +39,10 @@ let slideWidth2;
 let currentIndex = 0;
 let currentIndex2 = 0;
 
+const lightBox = document.querySelector("#lightbox");
+const links = document.querySelectorAll(".promo-light-box-button a");
+const content = document.querySelector("#lightbox article");
+
 (function () {
   "use strict";
   console.log("fired");
@@ -290,3 +294,50 @@ function showHideGrape() {
 if (btngrape) {
   btngrape.addEventListener("click", showHideGrape);
 }
+
+let promo = [
+  {
+    name: "Lime",
+
+    discount: "Buy 1 Get 1 Free",
+  },
+  {
+    name: "Peach",
+
+    discount: "10% OFF",
+  },
+  {
+    name: "Pineapple",
+
+    discount: "20% OFF",
+  },
+  {
+    name: "Grape",
+
+    discount: "50% OFF",
+  },
+  // PROVING YOUR UNDERSTANDING: add a new object key/value that stores the image for each hero!
+];
+
+//console.log(promo[0].name);
+
+function fillContent() {
+  console.log(this.dataset.heroIndex);
+
+  content.innerHTML = "";
+
+  let productName = document.createElement("h3");
+  productName.innerText = promo[this.dataset.heroIndex].name;
+  productName.classList = "lb_heading";
+  content.appendChild(productName);
+
+  let productdiscount = document.createElement("p");
+  productdiscount.innerText = promo[this.dataset.heroIndex].discount;
+  productdiscount.classList = "lb_text";
+  content.appendChild(productdiscount);
+
+  // PROVING YOUR UNDERSTANDING: using the new image value you stored in the hero object,
+  // update the image displayed in the lightbox that shows up!
+}
+
+links.forEach((link) => link.addEventListener("click", fillContent));
