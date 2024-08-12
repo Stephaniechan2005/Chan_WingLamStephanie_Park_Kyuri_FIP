@@ -941,25 +941,34 @@ textarea {
 
 /* 12.  Flavours Page */
 #lime-images {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* background-color: #333; */
-  justify-content: space-between;
-  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
   background: url(../images/flavourBanner.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   object-fit: cover;
   color: #fff;
+  overflow: hidden;
 }
 
+#lime-images h2 {
+  z-index: 1;
+  font-size: 120px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
 
 /* Flavour Details Section */
 #lime-detail-sec,
 #peach-detail-sec,
 #pineapple-detail-sec,
 #grape-detail-sec {
+  z-index: 5;
   display: flex;
   justify-content: space-evenly; /* Align items to the edges */
   align-items: flex-start; /* Align items to the top */
@@ -1724,16 +1733,4 @@ details p {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-}
-
-/*---- Products page desktop ----*/
-#lime-images {
-  /* put image later*/
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 100px;
-  padding: 100px;
-  background-color: #333;
-  justify-content: space-between;
 }
