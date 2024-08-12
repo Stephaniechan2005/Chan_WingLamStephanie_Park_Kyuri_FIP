@@ -8,17 +8,17 @@ Couples Resort Responsive Build
 
     1.  General Styles
     2.  Main Nav
-    3.  Main Hero Image
-    4.  edients
+    3.  Video
+    4.  Ingredients
     5.  Introducing Quatro Flavours
     6.  Featuring Product
     7.  Flavous
     8.  Subscribe
     9.  Testimonial
-    10.  Gallery
+    10. Gallery
     11. Footer
     12. Contact Page
-    13.  Flavours Page
+    13. Flavours Page
  */
 
 /* 1. ---General Styles--- */
@@ -65,6 +65,7 @@ h3 {
   font-weight: 400;
   font-style: normal;
 }
+
 /* 2. ---Main Nav--- */
 
 #main-nav button {
@@ -80,7 +81,7 @@ h3 {
 #main-nav button.expanded {
   transform: rotate(90deg);
 }
-/* change font weight */
+
 #burger-con {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -88,7 +89,6 @@ h3 {
   font-weight: 900;
 }
 
-/* nav text align:center; */
 #burger-con ul {
   text-align: right;
 }
@@ -130,13 +130,13 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* change the size of mobile ver of logo */
 #logo {
   margin-bottom: 20px;
   width: 100px;
 }
-/* 3. Hero => video */
-/* delete class="hidden" to see size of the box */
+
+/*  3. --- Video --- */
+
 #video-box {
   margin-bottom: 20px;
   font-size: 100px;
@@ -178,8 +178,8 @@ h3 {
 #poster img {
   margin-top: 20px;
 }
-/* I set the sizes(width and height) of all the svg the same. */
-/* 4. ---edeints--- */
+
+/* 4. --- Ingredients --- */
 #ingredients {
   margin-bottom: 30px;
 }
@@ -220,7 +220,7 @@ h3 {
   padding-right: 40px;
 }
 
-/* 5.  Introducing Quatro Flavours */
+/* 5.  --- Introducing Quatro Flavours --- */
 
 #introduction-flavour-box p {
   margin: 30px 0;
@@ -228,7 +228,7 @@ h3 {
 }
 
 #poster {
-  position: relative; /* Allow absolute positioning of child elements*/
+  position: relative; 
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -263,7 +263,6 @@ h3 {
   font-size: 20px;
   cursor: pointer;
   padding: 20px;
-  /* border: 2px solid black; */
   background-color: rgba(255, 255, 255, 0.6);
   z-index: 10;
 }
@@ -276,7 +275,7 @@ h3 {
   right: 0px;
 }
 
-/* 애니 */
+/* Animation */
 .box1 {
   top: 20%;
   left: 40%;
@@ -536,7 +535,7 @@ h3 {
   align-self: flex-end;
 }
 
-/*  6.  Featuring Product */
+/*  6.  --- Featuring Product --- */
 
 #featuring-product-flex {
   display: flex;
@@ -548,7 +547,7 @@ h3 {
 #featuring-con {
   margin-bottom: 30px;
 }
-/* 7.  Flavours */
+/* 7.  --- Flavours ---*/
 
 #flavours-con {
   margin-bottom: 30px;
@@ -583,7 +582,7 @@ h3 {
   width: 30px;
   align-self: flex-end;
 }
-/* 8.  Subscribe */
+/* 8.  --- Subscribe --- */
 #subscribe-con {
   padding: 80px 20px;
   background-color: rgba(3, 23, 73, 0.5);
@@ -703,7 +702,7 @@ button {
   text-align: center;
 }
 
-/* 10. ---Gallery--- */
+/* 10. --- Gallery --- */
 #gallery_header {
   display: flex;
   align-items: center;
@@ -880,7 +879,7 @@ button {
   height: 80px;
 }
 
-/*12. Contact Page */
+/*12. --- Contact Page --- */
 
 #pineapple_contact {
   display: none;
@@ -941,7 +940,8 @@ textarea {
   background-color: #1dda00af;
 }
 
-/* 12.  Flavours Page */
+/* 13.  --- Flavours Page --- */
+
 #lime-images {
   position: relative;
   display: flex;
@@ -954,7 +954,6 @@ textarea {
   background-position: center;
   background-attachment: fixed;
   color: #fff;
-  /* overflow: hidden; */
 }
 
 #lime-images h2 {
@@ -1046,19 +1045,19 @@ textarea {
 
 /* Flavour Detail Box */
 .flavour-detail-box {
-  max-width: 600px; /* Adjust width as needed */
+  max-width: 600px; 
 }
 
 .flavour-detail-box p {
-  padding-top: 10px; /* Reduced padding for a tighter layout */
+  padding-top: 10px; 
   line-height: 25px;
-  font-size: 14px; /* Slightly smaller font size */
+  font-size: 14px; 
 }
 
 .flavour-detail-box h4 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 14px; /* Adjust font size for consistency */
+  font-size: 14px; 
 }
 
 .flavour-icon-pair {
@@ -1154,6 +1153,7 @@ details p {
     opacity: 1;
   }
 }
+
 /* lightbox rules here */
 
 .lightbox {
