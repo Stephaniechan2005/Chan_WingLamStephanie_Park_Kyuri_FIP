@@ -1300,7 +1300,7 @@ details p {
     top: 0px;
     background-color: #fffbf3;
     /* border-bottom: solid 1px #c3c3c3; */
-    z-index: 1;
+    z-index: 13;
   }
 
   /* set the nav at the center on vertical line */
