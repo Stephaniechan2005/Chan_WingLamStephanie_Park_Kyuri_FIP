@@ -43,6 +43,8 @@ const lightBox = document.querySelector("#lightbox");
 const links = document.querySelectorAll(".promo-light-box-button a");
 const content = document.querySelector("#lightbox article");
 
+const textFlavourHeader = document.querySelector("#text_flavour_header");
+
 (function () {
   "use strict";
   console.log("fired");
@@ -341,3 +343,12 @@ function fillContent() {
 }
 
 links.forEach((link) => link.addEventListener("click", fillContent));
+
+if (textFlavourHeader) {
+  function scrolltext() {
+    let Yvalue = window.scrollY;
+    console.log(Yvalue);
+    textFlavourHeader.style.marginTop = Yvalue * 2.5 + "px";
+  }
+  window.addEventListener("scroll", scrolltext);
+}
