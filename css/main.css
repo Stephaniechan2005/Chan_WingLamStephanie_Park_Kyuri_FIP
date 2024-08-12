@@ -302,8 +302,9 @@ h3 {
 }
 
 .box2 {
+  font-family: "kon-tiki-aloha-jf", sans-serif;
   top: 15%;
-  right: 100%;
+  right: 105%;
   font-size: 50px;
   font-weight: bold;
   color: #fff;
@@ -332,6 +333,7 @@ h3 {
 }
 
 .box3 {
+  font-family: "kon-tiki-aloha-jf", sans-serif;
   top: 15%;
   left: 45%;
   font-size: 50px;
