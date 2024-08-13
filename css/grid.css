@@ -178,8 +178,12 @@ h5 {
 /* --- 3. Tablet Library Grid Styles --- */
 @media screen and (min-width: 768px) {
 
+  #video-box {
+    width: 700px;
+  }
+
   #video-box video {
-    width: 1160px;
+    width: 700px;
   }
 
   .grid-con {
@@ -322,7 +326,16 @@ h5 {
 
 /* --- 4. Desktop Library Grid Styles --- */
 @media screen and (min-width: 1448px) {
-  
+
+  #video-box {
+    width: 1220px;
+  }
+
+  #video-box video {
+    width: 1220px;
+  }
+
+
   .grid-con {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -460,10 +473,16 @@ h5 {
 
 /* --- 5. X-Large Desktop Library Grid Styles --- */
 @media screen and (min-width: 1920px) {
-
+   
+    
   #video-box {
-    width: 1000px;
+    width: 1700px;
   }
+
+  #video-box video {
+    width: 1700px;
+  }
+
 
   .grid-con {
     grid-column-gap: 34px;
