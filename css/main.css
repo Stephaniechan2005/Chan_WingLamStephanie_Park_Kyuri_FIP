@@ -1230,8 +1230,8 @@ details p {
 .lb_text {
   line-height: 1.6 !important;
   margin-left: 0;
-  padding-top: 2em;
-  font-size: 70px;
+  padding-top: 1em;
+ font-size: 60px;  /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
 }
 
 .lb_features {
@@ -1240,6 +1240,7 @@ details p {
   padding: 0;
   text-align: left;
   max-width: 80%;
+  margin-bottom: 2em;
 }
 
 .lb_features li {
@@ -1248,21 +1249,20 @@ details p {
 }
 
 .lb_serving-suggestions {
-  list-style-type: disc;
+  list-style-type:decimal;
   margin: 20px auto;
   padding: 0;
   text-align: left;
   max-width: 80%;
-  font-size: 0.6em;
+  font-size: 1.5em;
+  margin-bottom: 90px;
 }
 
 .lb_serving-suggestions li {
-  font-size: 0.6em; /* Ensure font size is consistent for list items */
-  margin-bottom: 0.5em;
+  font-size: 0.7em; 
+  margin-bottom: 0.9em;
 }
 
-
-/* turn the lightbox on using the :target pseudo selector */
 .lightbox:target {
   display: block;
 }

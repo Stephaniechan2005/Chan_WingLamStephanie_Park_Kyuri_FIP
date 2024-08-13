@@ -302,7 +302,7 @@ let promo = [
     name: "Lime",
     discount: "Buy 1 Get 1 Free",
     image: "images/Limecan.png",
-    description: "Tangy and citrusy, with refreshing kick. Elevate your taste buds  with the zesty burst of freshly squeezed lime juice.",
+    description: "Tangy and citrusy, with a refreshing kick. Elevate your taste buds with the zesty burst of freshly squeezed lime juice.",
     features: [
       "Refreshing citrus flavor",
       "Perfect for a summer day",
@@ -362,17 +362,17 @@ let promo = [
       "Pair with cheese and crackers",
     ],
   },
+];
   // PROVING YOUR UNDERSTANDING: add a new object key/value that stores the image for each hero!
   // Added more key/value pairs. we can remove or add more later.
-];
+
 
 //console.log(promo[0].name);
-
 function fillContent() {
   const index = this.dataset.heroIndex;
   const product = promo[index];
-
-  content.innderHTML = "";
+  
+  content.innerHTML = "";
 
   let productName = document.createElement("h3");
   productName.innerText = product.name;
@@ -399,7 +399,7 @@ function fillContent() {
   product.features.forEach(feature => {
     let listItem = document.createElement("li");
     listItem.innerText = feature;
-    featureeList.appendChild(listItem);
+    featuresList.appendChild(listItem);
   });
   featuresList.classList = "lb_features";
   content.appendChild(featuresList);
@@ -414,11 +414,11 @@ function fillContent() {
   content.appendChild(servingSuggestionsList);
 }
 
-
+links.forEach((link) => link.addEventListener("click", fillContent));
 
   // PROVING YOUR UNDERSTANDING: using the new image value you stored in the hero object,
   // update the image displayed in the lightbox that shows up!
-links.forEach((link) => link.addEventListener("click", fillContent));
+
 
 if (textFlavourHeader) {
   function scrolltext() {
