@@ -1,6 +1,6 @@
 # Chan_WingLamStephanie_Park_Kyuri_FIP
 
-This repo is for S24 FIP
+This repo is for Summer 24 FIP Quatro website. The website created by Chan Wing Lam Stephanie and Park Kyuri.
 
 ## Installation
 
