@@ -300,48 +300,124 @@ if (btngrape) {
 let promo = [
   {
     name: "Lime",
-
     discount: "Buy 1 Get 1 Free",
+    image: "images/Limecan.png",
+    description: "Tangy and citrusy, with refreshing kick. Elevate your taste buds  with the zesty burst of freshly squeezed lime juice.",
+    features: [
+      "Refreshing citrus flavor",
+      "Perfect for a summer day",
+      "Enhances tropical drink mix",
+    ],
+    servingSuggestions: [
+      "Serve chilled over ice",
+      "Mix with a splash of soda water",
+      "Garnish with a lime wedge",
+    ],
   },
   {
     name: "Peach",
-
     discount: "10% OFF",
+    image: "images/Peachcan.png",
+    description: "Sweet and juicy, with a hint of floral notes. Experience the delightful flavor of ripe peaches in every sip.",
+    features: [
+      "Sweet peach flavor",
+      "Subtle floral undertones",
+      "Smooth and refreshing",
+    ],
+    servingSuggestions: [
+      "Serve chilled with a mint leaf",
+      "Pair with grilled chicken",
+      "Enjoy as a refreshing afternoon drink",
+    ],
   },
   {
     name: "Pineapple",
-
     discount: "20% OFF",
+    image: "images/Pineapplecan.png",
+    description: "Tropical and tangy, with a rich pineapple taste. This drink brings a taste of the tropics to you with every sip.",
+    features: [
+      "Tropical pineapple taste",
+      "Perfect balance of sweetness and tartness",
+      "Great for cocktails and mocktails",
+    ],
+    servingSuggestions: [
+      "Serve with a slice of pineapple",
+      "Mix with coconut water for a tropical twist",
+      "Use as a base for fruity cocktails",
+    ],
   },
   {
     name: "Grape",
-
     discount: "50% OFF",
+    image: "images/Grapecan.png",
+    description: "Rich and juicy, with a burst of grape flavor. Enjoy the delicious taste of ripe grapes with every sip.",
+    features: [
+      "Rich grape flavor",
+      "Sweet and tangy",
+      "Great for all ages",
+    ],
+    servingSuggestions: [
+      "Serve chilled with a grape skewer",
+      "Mix with sparkling water for a refreshing drink",
+      "Pair with cheese and crackers",
+    ],
   },
   // PROVING YOUR UNDERSTANDING: add a new object key/value that stores the image for each hero!
+  // Added more key/value pairs. we can remove or add more later.
 ];
 
 //console.log(promo[0].name);
 
 function fillContent() {
-  console.log(this.dataset.heroIndex);
+  const index = this.dataset.heroIndex;
+  const product = promo[index];
 
-  content.innerHTML = "";
+  content.innderHTML = "";
 
   let productName = document.createElement("h3");
-  productName.innerText = promo[this.dataset.heroIndex].name;
+  productName.innerText = product.name;
   productName.classList = "lb_heading";
   content.appendChild(productName);
 
-  let productdiscount = document.createElement("p");
-  productdiscount.innerText = promo[this.dataset.heroIndex].discount;
-  productdiscount.classList = "lb_text";
-  content.appendChild(productdiscount);
+  let productDiscount = document.createElement("p");
+  productDiscount.innerText = product.discount;
+  productDiscount.classList = "lb_text";
+  content.appendChild(productDiscount);
+
+  let productImage = document.createElement("img");
+  productImage.src = product.image;
+  productImage.alt = `${product.name} Image`;
+  productImage.classList = "lb_image";
+  content.appendChild(productImage);
+
+  let productDescription = document.createElement("p");
+  productDescription.innerText = product.description;
+  productDescription.classList = "lb_text";
+  content.appendChild(productDescription);
+
+  let featuresList = document.createElement("ul");
+  product.features.forEach(feature => {
+    let listItem = document.createElement("li");
+    listItem.innerText = feature;
+    featureeList.appendChild(listItem);
+  });
+  featuresList.classList = "lb_features";
+  content.appendChild(featuresList);
+
+  let servingSuggestionsList = document.createElement("ul");
+  product.servingSuggestions.forEach(suggestion => {
+    let listItem = document.createElement("li");
+    listItem.innerText = suggestion;
+    servingSuggestionsList.appendChild(listItem);
+  });
+  servingSuggestionsList.classList = "lb_serving-suggestions";
+  content.appendChild(servingSuggestionsList);
+}
+
+
 
   // PROVING YOUR UNDERSTANDING: using the new image value you stored in the hero object,
   // update the image displayed in the lightbox that shows up!
-}
-
 links.forEach((link) => link.addEventListener("click", fillContent));
 
 if (textFlavourHeader) {

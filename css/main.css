@@ -1176,15 +1176,17 @@ details p {
   background-position: 40px bottom;*/
 
   z-index: 5000;
-
+  /* 일단 보고 별로면 지우기 */
   display: none;
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box; 
 }
 
 .lightbox_close {
-  position: relative;
+  position: absolute;
   top: 20px;
-  left: 95%;
-
+  right: 20px;
   color: white;
   font-size: 3em;
 
@@ -1201,16 +1203,28 @@ details p {
 .lightbox article {
   width: 100%;
   padding-top: 50px;
-}
-
-.lb_text,
-.lb_heading {
-  text-align: center;
   color: #fff;
 }
 
+.lb_text {
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: #fff;
+}
+
+.lb_image {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+}
+
 .lb_heading {
-  font-size: 80px;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0.5em;
 }
 
 .lb_text {
@@ -1219,6 +1233,34 @@ details p {
   padding-top: 2em;
   font-size: 70px;
 }
+
+.lb_features {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding: 0;
+  text-align: left;
+  max-width: 80%;
+}
+
+.lb_features li {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.lb_serving-suggestions {
+  list-style-type: disc;
+  margin: 20px auto;
+  padding: 0;
+  text-align: left;
+  max-width: 80%;
+  font-size: 0.6em;
+}
+
+.lb_serving-suggestions li {
+  font-size: 0.6em; /* Ensure font size is consistent for list items */
+  margin-bottom: 0.5em;
+}
+
 
 /* turn the lightbox on using the :target pseudo selector */
 .lightbox:target {
