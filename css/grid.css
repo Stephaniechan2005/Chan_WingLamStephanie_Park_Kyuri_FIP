@@ -177,6 +177,11 @@ h5 {
 
 /* --- 3. Tablet Library Grid Styles --- */
 @media screen and (min-width: 768px) {
+
+  #video-box {
+    width: 800px;
+  }
+
   .grid-con {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -317,6 +322,10 @@ h5 {
 
 /* --- 4. Desktop Library Grid Styles --- */
 @media screen and (min-width: 1448px) {
+  
+  #video-box {
+    width: 900px;
+  }
 
   .grid-con {
     display: grid;
@@ -455,6 +464,11 @@ h5 {
 
 /* --- 5. X-Large Desktop Library Grid Styles --- */
 @media screen and (min-width: 1920px) {
+
+  #video-box {
+    width: 1000px;
+  }
+
   .grid-con {
     grid-column-gap: 34px;
     padding-left: 17px;
