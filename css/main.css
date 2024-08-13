@@ -228,7 +228,7 @@ h3 {
 }
 
 #poster {
-  position: relative; 
+  position: relative;
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -954,6 +954,7 @@ textarea {
   background-position: center;
   background-attachment: fixed;
   color: #fff;
+  overflow: hidden;
 }
 
 #lime-images h2 {
@@ -1045,19 +1046,19 @@ textarea {
 
 /* Flavour Detail Box */
 .flavour-detail-box {
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .flavour-detail-box p {
-  padding-top: 10px; 
+  padding-top: 10px;
   line-height: 25px;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .flavour-detail-box h4 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .flavour-icon-pair {
