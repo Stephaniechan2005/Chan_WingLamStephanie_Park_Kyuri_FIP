@@ -92,6 +92,15 @@ h5 {
   height: 300px;
 }
 /* --- 2. Mobile Library Grid Styles --- */
+
+#video-box {
+  width: 400px;
+}
+
+#video-box video {
+  width: 400px;
+}
+
 .full-width-grid-con {
   display: grid;
   grid-template-columns: 1fr minmax(0, 1448px) 1fr;
