@@ -140,6 +140,9 @@ h3 {
 #video-box {
   margin-bottom: 20px;
   font-size: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 #sign-header {
@@ -220,7 +223,7 @@ h3 {
   padding-right: 40px;
 }
 
-/* 5.  --- Introducing Quatro Flavours --- */
+/* 5.  --- Introducing Quatro s --- */
 
 #introduction-flavour-box p {
   margin: 30px 0;
