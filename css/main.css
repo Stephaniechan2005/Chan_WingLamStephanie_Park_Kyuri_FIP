@@ -1208,10 +1208,13 @@ details p {
 
 .lb_text {
   text-align: center;
-  font-size: 2em;
+  font-size: 2em;  /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
   line-height: 1.6;
-  margin-bottom: 1em;
+  margin: 0 auto;
+  margin-bottom: 0.2em;
   color: #fff;
+  max-width: 70%;
+  margin-top: 0.5em;
 }
 
 .lb_image {
@@ -1222,16 +1225,9 @@ details p {
 }
 
 .lb_heading {
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: center;
   margin-bottom: 0.5em;
-}
-
-.lb_text {
-  line-height: 1.6 !important;
-  margin-left: 0;
-  padding-top: 1em;
- font-size: 60px;  /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
 }
 
 .lb_features {
@@ -1239,21 +1235,22 @@ details p {
   margin: 20px auto;
   padding: 0;
   text-align: left;
-  max-width: 80%;
+  max-width: 60%;
   margin-bottom: 2em;
+  margin-top: 5em;
 }
 
 .lb_features li {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 0.5em;
 }
 
 .lb_serving-suggestions {
-  list-style-type:decimal;
+  list-style-type:circle;
   margin: 20px auto;
   padding: 0;
   text-align: left;
-  max-width: 80%;
+  max-width: 60%;
   font-size: 1.5em;
   margin-bottom: 90px;
 }
