@@ -884,6 +884,13 @@ button {
 
 /*12. --- Contact Page --- */
 
+.responsive-img {
+  width: 100%;
+  height: auto; /* 자동으로 비율을 유지 */
+  object-fit: cover; /* 이미지가 박스에 맞도록 조정 */
+}
+
+
 #pineapple_contact {
   display: none;
 }
