@@ -373,7 +373,7 @@ h3 {
   opacity: 0;
   color: #fff;
   z-index: 4;
-  animation: canAni 3s ease-out 5s forwards;
+  animation: canAni 3s ease-out 4s forwards;
 }
 
 @keyframes canAni {
@@ -381,10 +381,10 @@ h3 {
     opacity: 0;
     transform: scale(0.3) rotate(-10deg);
   }
-  50% {
+  /*50% {
     opacity: 0.7;
     transform: scale(0.8) rotate(5deg);
-  }
+  }*/
   100% {
     opacity: 1;
     transform: scale(1) rotate(0deg);
@@ -409,12 +409,9 @@ h3 {
   }
   50% {
     opacity: 1;
-    transform: translateY(250px) rotate(20deg) scale(1.2);
+    transform: translateY(250px) rotate(20deg) scale(1);
   }
-  75% {
-    opacity: 1;
-    transform: translateY(400px) rotate(-10deg) scale(1);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(545px) rotate(0deg) scale(1);
@@ -438,12 +435,9 @@ h3 {
   }
   50% {
     opacity: 1;
-    transform: translateY(300px) scale(1.2);
+    transform: translateY(300px) scale(1);
   }
-  75% {
-    opacity: 1;
-    transform: translateY(450px) scale(1);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(655px) scale(1);
@@ -469,10 +463,7 @@ h3 {
     opacity: 1;
     transform: translateY(320px) rotate(-15deg);
   }
-  75% {
-    opacity: 1;
-    transform: translateY(470px) rotate(5deg);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(640px) rotate(0deg);
@@ -496,12 +487,9 @@ h3 {
   }
   50% {
     opacity: 1;
-    transform: translateY(350px) scale(1.3);
+    transform: translateY(350px) scale(1);
   }
-  75% {
-    opacity: 1;
-    transform: translateY(500px) scale(1);
-  }
+
   100% {
     opacity: 1;
     transform: translateY(570px) scale(1);
@@ -544,7 +532,8 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 50px;
+  justify-content: flex-start;
 }
 
 #featuring-con {
@@ -580,8 +569,8 @@ h3 {
   border: none;
   color: #333;
   font-weight: 900;
-  font-size: 15px;
-  padding: 10px 20px;
+  font-size: 30px;
+  padding: 0px 20px;
   width: 30px;
   align-self: flex-end;
 }
@@ -890,7 +879,6 @@ button {
   object-fit: cover; /* 이미지가 박스에 맞도록 조정 */
 }
 
-
 #pineapple_contact {
   display: none;
 }
@@ -1187,7 +1175,7 @@ details p {
   display: none;
   overflow: auto;
   padding: 20px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .lightbox_close {
@@ -1215,7 +1203,7 @@ details p {
 
 .lb_text {
   text-align: center;
-  font-size: 2em;  /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
+  font-size: 2em; /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
   line-height: 1.6;
   margin: 0 auto;
   color: #fff;
@@ -1230,7 +1218,6 @@ details p {
   max-width: 90%;
   height: auto;
   margin-top: -20px;
-  
 }
 
 .lb_heading {
@@ -1255,7 +1242,7 @@ details p {
 }
 
 .lb_serving-suggestions {
-  list-style-type:circle;
+  list-style-type: circle;
   margin: 20px auto;
   padding: 0;
   text-align: left;
@@ -1265,7 +1252,7 @@ details p {
 }
 
 .lb_serving-suggestions li {
-  font-size: 0.7em; 
+  font-size: 0.7em;
   margin-bottom: 0.9em;
 }
 
