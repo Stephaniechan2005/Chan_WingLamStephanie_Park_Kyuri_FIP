@@ -1218,10 +1218,10 @@ details p {
   font-size: 2em;  /* 이거 중간 텍스트 크기임. 나중에 필요하면 조절 */
   line-height: 1.6;
   margin: 0 auto;
-  margin-bottom: 0.2em;
   color: #fff;
   max-width: 70%;
-  margin-top: 0.5em;
+  margin-top: -2px;
+  font-weight: bolder;
 }
 
 .lb_image {
@@ -1229,6 +1229,8 @@ details p {
   margin: 0 auto;
   max-width: 90%;
   height: auto;
+  margin-top: -20px;
+  
 }
 
 .lb_heading {
@@ -1244,11 +1246,11 @@ details p {
   text-align: left;
   max-width: 60%;
   margin-bottom: 2em;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .lb_features li {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-bottom: 0.5em;
 }
 
