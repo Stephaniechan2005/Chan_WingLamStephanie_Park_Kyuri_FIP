@@ -123,7 +123,7 @@ function previousTestimonial() {
 if (testimonialCon) {
   displayTestimonial();
 
-  //setInterval(nextTestimonial, 1000);
+  setInterval(nextTestimonial, 4500);
 
   next.addEventListener("click", nextTestimonial);
   previous.addEventListener("click", previousTestimonial);
@@ -178,7 +178,7 @@ if (slider) {
   // Call updateSlideWidth initially to set the correct initial slide width
   updateSlideWidth();
 
-  setInterval(nextSlide, 1500);
+  setInterval(nextSlide, 3500);
 }
 function showSlide2(index) {
   const newTransformValue = -index * slideWidth2 + "px";
@@ -302,7 +302,8 @@ let promo = [
     name: "Lime",
     discount: "Buy 1 Get 1 Free",
     image: "images/Limecan.png",
-    description: "Tangy and citrusy, with a refreshing kick. Elevate your taste buds with the zesty burst of freshly squeezed lime juice.",
+    description:
+      "Tangy and citrusy, with a refreshing kick. Elevate your taste buds with the zesty burst of freshly squeezed lime juice.",
     features: [
       "Refreshing citrus flavor",
       "Perfect for a summer day",
@@ -318,7 +319,8 @@ let promo = [
     name: "Peach",
     discount: "10% OFF",
     image: "images/Peachcan.png",
-    description: "Sweet and juicy, with a hint of floral notes. Experience the delightful flavor of ripe peaches in every sip.",
+    description:
+      "Sweet and juicy, with a hint of floral notes. Experience the delightful flavor of ripe peaches in every sip.",
     features: [
       "Sweet peach flavor",
       "Subtle floral undertones",
@@ -334,7 +336,8 @@ let promo = [
     name: "Pineapple",
     discount: "20% OFF",
     image: "images/Pineapplecan.png",
-    description: "Tropical and tangy, with a rich pineapple taste. This drink brings a taste of the tropics to you with every sip.",
+    description:
+      "Tropical and tangy, with a rich pineapple taste. This drink brings a taste of the tropics to you with every sip.",
     features: [
       "Tropical pineapple taste",
       "Perfect balance of sweetness and tartness",
@@ -350,12 +353,9 @@ let promo = [
     name: "Grape",
     discount: "50% OFF",
     image: "images/Grapecan.png",
-    description: "Rich and juicy, with a burst of grape flavor. Enjoy the delicious taste of ripe grapes with every sip.",
-    features: [
-      "Rich grape flavor",
-      "Sweet and tangy",
-      "Great for all ages",
-    ],
+    description:
+      "Rich and juicy, with a burst of grape flavor. Enjoy the delicious taste of ripe grapes with every sip.",
+    features: ["Rich grape flavor", "Sweet and tangy", "Great for all ages"],
     servingSuggestions: [
       "Serve chilled with a grape skewer",
       "Mix with sparkling water for a refreshing drink",
@@ -363,15 +363,14 @@ let promo = [
     ],
   },
 ];
-  // PROVING YOUR UNDERSTANDING: add a new object key/value that stores the image for each hero!
-  // Added more key/value pairs. we can remove or add more later.
-
+// PROVING YOUR UNDERSTANDING: add a new object key/value that stores the image for each hero!
+// Added more key/value pairs. we can remove or add more later.
 
 //console.log(promo[0].name);
 function fillContent() {
   const index = this.dataset.heroIndex;
   const product = promo[index];
-  
+
   content.innerHTML = "";
 
   let productName = document.createElement("h3");
@@ -396,7 +395,7 @@ function fillContent() {
   content.appendChild(productDescription);
 
   let featuresList = document.createElement("ul");
-  product.features.forEach(feature => {
+  product.features.forEach((feature) => {
     let listItem = document.createElement("li");
     listItem.innerText = feature;
     featuresList.appendChild(listItem);
@@ -405,7 +404,7 @@ function fillContent() {
   content.appendChild(featuresList);
 
   let servingSuggestionsList = document.createElement("ul");
-  product.servingSuggestions.forEach(suggestion => {
+  product.servingSuggestions.forEach((suggestion) => {
     let listItem = document.createElement("li");
     listItem.innerText = suggestion;
     servingSuggestionsList.appendChild(listItem);
@@ -416,9 +415,8 @@ function fillContent() {
 
 links.forEach((link) => link.addEventListener("click", fillContent));
 
-  // PROVING YOUR UNDERSTANDING: using the new image value you stored in the hero object,
-  // update the image displayed in the lightbox that shows up!
-
+// PROVING YOUR UNDERSTANDING: using the new image value you stored in the hero object,
+// update the image displayed in the lightbox that shows up!
 
 if (textFlavourHeader) {
   function scrolltext() {
