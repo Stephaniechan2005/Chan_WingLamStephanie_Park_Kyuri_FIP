@@ -317,6 +317,7 @@ h3 {
 }
 
 /* Animation */
+/* Deexerated last fall. */
 .box1 {
   top: 20%;
   left: 40%;
@@ -437,7 +438,7 @@ h3 {
   height: 100px;
   z-index: 3;
   opacity: 0;
-  animation: pineapple 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+  animation: pineapple 4s ease-out 6s forwards;
 }
 
 @keyframes pineapple {
@@ -445,11 +446,10 @@ h3 {
     opacity: 0;
     transform: translateY(-400px) rotate(-30deg) scale(0.8);
   }
-  50% {
+  60% {
     opacity: 1;
     transform: translateY(250px) rotate(20deg) scale(1);
   }
-
   100% {
     opacity: 1;
     transform: translateY(545px) rotate(0deg) scale(1);
@@ -463,7 +463,7 @@ h3 {
   width: 55%;
   height: 110px;
   z-index: 5;
-  animation: grape 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+  animation: grape 4s ease-out 6s forwards;
 }
 
 @keyframes grape {
@@ -471,11 +471,10 @@ h3 {
     opacity: 0;
     transform: translateY(-300px) scale(0.8);
   }
-  50% {
+  60% {
     opacity: 1;
     transform: translateY(300px) scale(1);
   }
-
   100% {
     opacity: 1;
     transform: translateY(655px) scale(1);
@@ -489,7 +488,7 @@ h3 {
   width: 45%;
   height: 100px;
   z-index: 5;
-  animation: limee 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+  animation: limee 4s ease-out 6s forwards;
 }
 
 @keyframes limee {
@@ -497,11 +496,10 @@ h3 {
     opacity: 0;
     transform: translateY(-300px) rotate(30deg);
   }
-  50% {
+  60% {
     opacity: 1;
     transform: translateY(320px) rotate(-15deg);
   }
-
   100% {
     opacity: 1;
     transform: translateY(640px) rotate(0deg);
@@ -515,7 +513,7 @@ h3 {
   width: 45%;
   height: 150px;
   z-index: 3;
-  animation: peach 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 6s forwards;
+  animation: peach 4s ease-out 6s forwards;
 }
 
 @keyframes peach {
@@ -523,16 +521,16 @@ h3 {
     opacity: 0;
     transform: translateY(-300px) scale(0.8);
   }
-  50% {
+  60% {
     opacity: 1;
     transform: translateY(350px) scale(1);
   }
-
   100% {
     opacity: 1;
     transform: translateY(570px) scale(1);
   }
 }
+
 
 /* Default styles (for larger screens) */
 .box1,
